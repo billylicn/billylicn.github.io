@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>提交反馈</title>
+	<style type="text/css">
+	.xiangmu{
+		background-color: skyblue; 
+		font-size: 55px       
+	}
+	/*项目文字背景天蓝，字号55px*/
+	.kuang{
+		font-size: 60px
+	}
+	/*选择框大小60px*/
+	body{
+		background-color: pink;
+	}
+	/*页面背景天蓝*/
+	h1{
+		font-size: 95px
+	}
+	/*标题字号95px*/
+   
+	</style>
+
+</head>
+<body>
+	<div>
+		<h1>提交关于本网站的反馈</h1>
+	</div>
+	    <div>
+		<form>
+			<p>
+				<label for="name" class="xiangmu">昵称</label>
+				<input type="text" id="name" class="kuang"/>
+			</p>
+		</div>
+		<p class="xiangmu">
+			性别
+			<input type="radio" name="xingbei" id="nan" class="kuang"/>
+			<label for="nan" >男</label>
+			<input type="radio" name="xingbei" id="nv" class="kuang"/>
+			<label for="nv" >女</label>
+			<input type="radio" name="xingbei" id="baomi" class="kuang"/>
+			<label for="baomi" >保密</label>
+		</p>
+
+		<p>
+			<label for="year" class="xiangmu">请选择您的年龄</label>
+			<select id="year" class="kuang">
+				<option>7岁</option>
+				<option>8岁</option>
+				<option>9岁</option>
+				<option>10岁</option>
+				<option>11岁</option>
+				<option>12岁</option>
+				<option>13岁</option>
+				<option>14岁</option>
+				<option>15岁</option>
+				<option>16岁</option>
+				<option>16-25岁</option>
+				<option>26-30岁</option>
+				<option>30岁以上</option>
+			</select>
+		</p>
+		<p>
+			<label for="word" class="xiangmu">问卷码(非必填)</label>
+			<input type="password" id="word" class="kuang"/>
+		</p>
+		<p class="xiangmu">
+			你是通过什么途径了解本网站的(可多选)
+			<input type="checkbox" id="fenxiang" class="kuang"/>
+			<label for="fenxiang" >好友分享</label>
+			<input type="checkbox" id="sousuoyinqin" class="kuang"/>
+			<label for="sousuoyinqin">搜索引擎</label>
+			<input type="checkbox" id="sjrj" class="kuang"/>
+			<label for="sjrj">社交软件</label>
+			<input type="checkbox" id="qita" class="kuang"/>
+			<label for="qita">其他</label>
+			<input type="text"value="请输入途径" class="kuang"/>
+		</p>
+		<p>
+			<label for="jianyi" class="xiangmu">你对本网站有什么建议</label>
+		</p>
+		<p>
+			<textarea cols="30" rows="4" id="jianyi" class="kuang"></textarea>
+		</p>
+		<p>
+			<input type="submit"  class="kuang"/>
+		</p>
+	</form>
+</body>
+</html>
