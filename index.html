@@ -6,46 +6,60 @@
 	<meta name="keywords" content="李智的小站, 个人小站, 欢迎来到李智的小站，李智的个人网站">
     <meta name="description" content="关于李智的个人生活，个人学习，个人收集，个人创作分享的网站，欢迎大家前来测试">
 	<style type="text/css">
+		*{
+			padding: 0px;
+			margin: 0px;
+			/*清除默认样式*/
+		}
 		html{
 			background-color: #FFFAF0;
-			padding: 0px;
+			
 			/*背景色*/
 		}
 		#title{
 			font-size: 70px;
 			font-weight: bold;
 			text-align: center;
-			padding: 25px;
+			padding: 75px;
 			background-color: #FFE4B5;
+
 		}
-		.part{
+		#nav .bottom{
 			float: left;
 			background-color: #FF7F50;
 			margin: 30px;
 			font-size: 50px;
 			padding: 30px;
 			font-weight: bold;
+
 		}
-		a{
+		#nav .bottom a{
 			text-decoration: none;
 			color: #66669;
-		}
-		#bottom{
-			float: left;
-			margin: 0px;
-		}
-		#declare{
-			float: bottom;
+			
+			/*链接样式*/
 		}
 		h2{
+			
 			display: block;
 			font-size: 85px;
 			margin: 100px 0px 0px;
 			color: #009999;
 		}
-		.bata{
-			background-color: #cccccc;
+		#nav{
+			float: left;
+			margin: 0px;
+			
 		}
+		#declare{
+			float: bottom;
+		}
+		
+		.bata{
+			background-color: #ccc !important;
+		}
+		 
+
 	</style>
 </head>
 <body>
@@ -54,27 +68,27 @@
 	</div>
 	<h2>分区</h2>
 	<!-- 标题结束，开始分区 -->
-	<div id="bottom">
-		<div class="part ">
+	<div id="nav">
+		<div class="bottom ">
 			<a href="blog/index.html">我的博客</a>
 		</div>
-		<div class="part">
+		<div class="bottom">
 			<a href="novel/index.html">阅读小说</a>
 		</div>
-		<div class="part">
+		<div class="bottom">
 			<a href="tsss/index.html">涂山苏苏</a>
 		</div>
-		<div class="part bata">
+		<div class="bata bottom">
 			<a href="#">关于站长</a>
 		</div>
-		<div class="part">
+		<div class="bottom">
 			<a href="https://github.com/billylicn/billylicn.github.io">代码仓库</a>
 		</div>
-		<div class="part ">
+		<div class="bottom ">
 			<a href="pc/index.html">测试部分</a>
 		</div>
 	</div>
-	<!-- 进入声明区 -->
+	<!-- 进入声明区(还没做) -->
 
 </body>
 </html>
