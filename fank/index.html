@@ -4,6 +4,10 @@
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<title>提交反馈</title>
 	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
 	#title {
     	background-color: #FF7F50;
     	font-size: 62px;
@@ -13,6 +17,7 @@
 	#title #name{
 		font-size: 59px;
 		margin: 92px;
+		font-weight: bold;
 	}
 	#back{
 		font-size: 54px;
@@ -56,8 +61,19 @@
     	font-size: 60px;
     	margin-left: 125px;
     }
+    form div#mailto a{
+    	text-decoration: none;
+    	color: black;
+    	padding: 0px 60px;
+    	font-size: 50px;
+    	background-color: #f73809;
+	}
+	form div#mailto{
+		padding-left: 637px;
+		padding-top: 50px;
+	}
 	</style>
-
+	
 </head>
 <body>
 	<div  id="title">
@@ -65,9 +81,8 @@
 			<返回</a>
 				<span id="name">提交关于本网站的反馈</span>
 			</div>
-			
-			<div>
-				<form>
+			<form>
+				<div>
 					<p>
 						<label for="name" class="xiangmu">昵称</label>
 						<input type="text" id="name" class="kuang"/>
@@ -131,12 +146,7 @@
 					</p>
 				</div>
 				<div id="mailto">
-					<p>
-						<a href="mailto:2843379680@qq.com">
-							<input type="submit"/>
-						</a>
-					</p>
-					<a href="mailto:2843379680@qq.com">提交方式2</a>
+					<a href="mailto:2843379680@qq.com">提交</a>
 				</div>
 			</form>
 </body>
