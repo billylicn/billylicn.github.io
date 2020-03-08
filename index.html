@@ -5,16 +5,15 @@ description:
 ---
 
 {% include header.html %}
-
 <div
     class="g-banner home-banner {{ site.theme-color | prepend: 'banner-theme-' }}"
     data-theme="{{ site.theme-color }}"
     style="{% if page.header-img %}background: url({{ page.header-img | relative_url }}) no-repeat center center; background-size: cover;{% endif %}"
 >
     <h2>{{ page.home-title }}</h2>
-    
+
     <h3>
-        <p id="hitokoto"> 获取一言中...又是哪个家伙来了我的网站呢✧*｡٩(ˊᗜˋ*)و✧*</p>
+        <p id="hitokoto">获取一言中...又是哪个家伙来了我的网站呢✧*｡٩(ˊᗜˋ*)و✧*</p>
         <!-- 兼容低版本浏览器 (包括 IE)，可移除 -->
         <script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
@@ -72,86 +71,12 @@ description:
         {% if paginator.total_pages > 1 %}
             {% include pageNav.html %}
         {% endif %}
+        <audio controls="controls">
+            <source src="1.mp3" type="audio/mp3" />
+            Your browser does not support this audio format.
+        </audio>
     </div>
-
-    <aside class="g-sidebar-wrapper">
-        <div class="g-sidebar">
-            <section class="author-card">
-                <div class="avatar">
-                    <img src="{{ site.avatar | relative_url }}" alt=""></div>
-                <div class="author-name" rel="author">{{ site.author }}</div>
-                <div class="bio">
-                    <p>{{ site.bio }}</p>
-                </div>
-                {% if site.sns.size > 0 %}
-                <ul id="sns-links" class="sns-links">
-                    {% for s in site.sns %}
-                    <li>
-                        <a href="{{ s[1] }}" target="_blank"> <i class="iconfont icon-{{ s[0] }}"></i>
-                        </a>
-                    </li>
-                    {% endfor %}
-                </ul>
-                {% endif %}
-            </section>
-            {% if site.recommend-tags and site.tags.size>0 %}
-            <section class="tags-card">
-                {% for tag in site.tags %}
-                    {% if forloop.index > site.recommend-condition-size %}
-                        {% break %}
-                    {% endif %}
-                <a href="{{ "tags.html#" | append: tag[0] | relative_url }}" class="tag">{{ tag[0]}}</a>
-                {% endfor %}
-            </section>
-            {% endif %}
-        </div>
-        {% if site.search %}
-        <div class="search-card">
-            <input id="search_input" type="text" placeholder="Search..." autocomplete="off"> <i class="iconfont icon-search"></i>
-            <div class="search_result"></div>
-        </div>
-        {% endif %}
-        <div clear:both></div>
-       <div class="audio green-audio-player">
-  <div class="loading">
-    <div class="spinner"></div>
-  </div>
-  <div class="play-pause-btn">  
-    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24">
-      <path fill="#566574" fill-rule="evenodd" d="M18 12L0 24V0" class="play-pause-icon" id="playPause">
-    </path></svg>
-  </div>
-  
-  <div class="controls">
-    <span class="current-time">0:00</span>
-    <div class="slider" data-direction="horizontal">
-      <div class="progress">
-        <div class="pin" id="progress-pin" data-method="rewind"></div>
-      </div>
-    </div>
-    <span class="total-time">0:00</span>
-  </div>
-  
-  <div class="volume">
-    <div class="volume-btn">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path fill="#566574" fill-rule="evenodd" d="M14.667 0v2.747c3.853 1.146 6.666 4.72 6.666 8.946 0 4.227-2.813 7.787-6.666 8.934v2.76C20 22.173 24 17.4 24 11.693 24 5.987 20 1.213 14.667 0zM18 11.693c0-2.36-1.333-4.386-3.333-5.373v10.707c2-.947 3.333-2.987 3.333-5.334zm-18-4v8h5.333L12 22.36V1.027L5.333 7.693H0z" id="speaker">
-      </path></svg>
-    </div>
-    <div class="volume-controls hidden" style="bottom: 52px; left: -3px;">
-      <div class="slider" data-direction="vertical">
-        <div class="progress">
-          <div class="pin" id="volume-pin" data-method="changeVolume"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <audio>
-    <source src="1.mp3" type="audio/mpeg">
-  </audio>
-</div>
-    </aside>
+</aside>
 
 </main>
 {% include footer.html %}
