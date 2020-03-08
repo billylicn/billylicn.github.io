@@ -1,52 +1,104 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-	<title>李智的个人网站</title>
-	<meta name="keywords" content="李智的小站, 个人小站, 欢迎来到李智的小站，李智的个人网站">
-    <meta name="description" content="关于李智的个人生活，个人学习，个人收集，个人创作分享的网站，欢迎大家前来测试">
-    <meta name="baidu-site-verification" content="okOYu1gl7O" />
-	<style type="text/css">
-		*{margin:0;padding:0}html{background-color:#fffaf0}#title{padding:75px;background-color:#ffe4b5;text-align:center;font-weight:700;font-size:4.375rem}#nav .bottom{float:left;margin:30px;padding:30px;background-color:coral;font-weight:700;font-size:3.125rem}#nav .bottom a{display:block;color:#66669;text-decoration:none}h2{display:block;margin:75pt 0 0;color:#099;font-size:5.3125rem}#nav{float:left;margin:0}#declare{float:bottom}.bata{background-color:#ccc!important}
+---
+layout: default
+home-title: H2O Theme For Jekyll
+description: 或许是最漂亮的Jekyll主题
+---
 
-	</style>
-</head>
-<body>
-	<div id="title">
-		<p>欢迎来到李智的小站</p>
-	</div>
-	<h2>分区</h2>
-	<!-- 标题结束，开始分区 -->
-	<div id="nav">
-		<div class="bottom ">
-			<a href="blog/index.html">我的博客</a>
-		</div>
-		<div class="bottom">
-			<a href="tsss/index.html">涂山苏苏</a>
-		</div>
-		<div class="bottom">
-			<a href="bili/index.html">仿b站文章页</a>
-		</div>
-		<div class="bata bottom">
-			<a href="#">关于站长</a>
-		</div>
-		<div class="bottom">
-			<a href="https://github.com/billylicn/billylicn.github.io">代码仓库</a>
-		</div>
-		<div class="bottom ">
-			<a href="pc/index.html">测试部分</a>
-		</div>
-		<div class="bottom ">
-			<a href="fank/index.html">反馈板块</a>
-		</div>
-		<div class="bottom">
-			<a href="wuli.html">物理实验</a>
-		</div>
-		<div class="bottom">
-			<a href="myblog/index.html">博客2.0</a>
-		</div>
-	</div>
-	<!-- 进入声明区(还没做) -->
+{% include header.html %}
 
-</body>
-</html>
+<div
+    class="g-banner home-banner {{ site.theme-color | prepend: 'banner-theme-' }}"
+    data-theme="{{ site.theme-color }}"
+    style="{% if page.header-img %}background: url({{ page.header-img | relative_url }}) no-repeat center center; background-size: cover;{% endif %}"
+>
+    <h2>{{ page.home-title }}</h2>
+    <h3>{{ page.description }}</h3>
+</div>
+
+<main class="g-container home-content">
+    <div class="article-list">
+        {% for post in paginator.posts %}
+            <article class="article-item">
+                {% if post.cover %}
+                <div class="post-cover">
+                    <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}"></a>
+                    <img src="{{ post.cover | relative_url }}" href="{{ post.url | relative_url }}" alt="">
+                </div>
+                {% endif %}
+                <section class="post-preview">
+                    <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}"></a>
+                    <h2 class="post-title">{{ post.title }}</h2>
+                    {% if post.subtitle %}
+                    <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+                    {% endif %}
+                    {% if post.subtitle.size==0 or post.subtitle==nil %}
+                    <p class="post-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 126}}</p>
+                    {% endif %}
+                </section>
+                <footer class="post-meta">
+                    <div class="post-tags">
+                        {% if post.tags.size > 0 %}
+                            {% for tag in post.tags  %}
+                            <a href={{ "tags.html#" | append: tag | relative_url }} class="post-tag">{{ tag }}</a>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    <time class="post-date" datetime="{{ post.date | date:"%y-%m-%d" }}">{{ post.date | date_to_string }}</time>
+                </footer>
+            </article>
+        {% endfor %}
+
+        {% if paginator.total_pages > 1 %}
+            {% include pageNav.html %}
+        {% endif %}
+
+    </div>
+
+    <aside class="g-sidebar-wrapper">
+        <div class="g-sidebar">
+            <section class="author-card">
+                <div class="avatar">
+                    <img src="{{ site.avatar | relative_url }}" alt="">
+                </div>
+                <div class="author-name" rel="author">{{ site.author }}</div>
+                <div class="bio">
+                    <p>{{ site.bio }}</p>
+                </div>
+                {% if site.sns.size > 0 %}
+                <ul id="sns-links" class="sns-links">
+                    {% for s in site.sns %}
+                    <li>
+                        <a href="{{ s[1] }}" target="_blank">
+                            <i class="iconfont icon-{{ s[0] }}"></i>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </section>
+
+            {% if site.recommend-tags and site.tags.size>0 %}
+            <section class="tags-card">
+                {% for tag in site.tags %}
+                    {% if forloop.index > site.recommend-condition-size %}
+                        {% break %}
+                    {% endif %}
+                    <a href="{{ "tags.html#" | append: tag[0] | relative_url }}" class="tag">{{ tag[0]}}</a>
+                {% endfor %}
+            </section>
+            {% endif %}
+        </div>
+
+        {% if site.search %}
+        <div class="search-card">
+            <input id="search_input" type="text" placeholder="Search..." autocomplete="off">
+            <i class="iconfont icon-search"></i>
+            <div class="search_result"></div>
+        </div>
+        {% endif %}
+
+    </aside>
+
+</main>
+
+{% include footer.html %}
