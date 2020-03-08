@@ -1,5 +1,5 @@
 # Site settings 配置站点
-title: 'billyli博客'
+title: 'billyli的独立博客'
 description: 'billyli，00后，前端小白/伪极客。很高兴能在这里与你分享我对技术和生活的思考。'
 keyword: 'billyli, billyli的独立博客, billyli的博客'
 url: 'billylicn.gitHub.io' # your host
@@ -21,12 +21,12 @@ nav:
 
 # Footer
 footer:
-since: 2019
+  since: 2019
 
 # Author 配置博主信息
-author: 'billylicn'
+author: 'bilyli'
 nickname: 'billylicn'
-bio: '00后，前端小白/极客。热爱网络技术，很高兴能在这里与你分享我对技术和生活的思考'
+bio: '00后，前端小白/极客。热爱网络技术'
 avatar: '/assets/img/profile.png'
 
 # Search
@@ -55,10 +55,9 @@ postPatterns: 'circuitBoard'
 
 # SNS settings 配置社交网站
 # url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
- sns:
-  github:'//github.com/billylicn'
-  twitter:'//twitter.com/billyli30438690'
-  facebook:'//profile.php?id=100040776518442'
+sns:
+  instagram: '//www.instagram.com/billylicn'
+  github: '//github.com/billylicn'
 
 # Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar
@@ -76,7 +75,7 @@ kramdown:
   input: GFM
 
 # RSS
-RSS: ture
+RSS: false
 
 # Permalink
 # See: https://github.com/kaeyleo/jekyll-theme-H2O/issues/35
