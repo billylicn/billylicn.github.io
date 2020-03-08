@@ -38,7 +38,7 @@ nightMode: true
 # Comments 评论功能
 comments:
   disqus: ture
-  disqus_url: 'https://billts.site/js/gitment.js'
+  disqus_url: 'https://liaokeyu.disqus.com/embed.js'
 
 # MathJax 公式支持 by Ray-Eldath
 mathjax: true
