@@ -90,27 +90,28 @@
 			<span id="t_s">00 秒</span>
 		</DIV>
 		<h3>
-		<p id="hitokoto">获取一言中...</p>
-		<!-- 兼容低版本浏览器 (包括 IE)，可移除 -->
+			
+		<!-- <p id="hitokoto">获取一言中...</p>
+		兼容低版本浏览器 (包括 IE)，可移除
 		<script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
-		<!--End-->
+		End
 		<script>
-  fetch('https://v1.hitokoto.cn')
-    .then(function (res){
-      return res.json();
-    })
-    .then(function (data) {
-      var hitokoto = document.getElementById('hitokoto');
-      hitokoto.innerText = data.hitokoto; 
-    })
-    .catch(function (err) {
-      console.error(err);
-    })
-</script>
-	</h3>
-	</div>
-	<!--高考倒计时结束-->
+		  fetch('https://v1.hitokoto.cn')
+		    .then(function (res){
+		      return res.json();
+		    })
+		    .then(function (data) {
+		      var hitokoto = document.getElementById('hitokoto');
+		      hitokoto.innerText = data.hitokoto; 
+		    })
+		    .catch(function (err) {
+		      console.error(err);
+		    })
+		</script>
+			</h3>
+			</div>
+			高考倒计时结束 -->
 	
 </body>
 </html>
