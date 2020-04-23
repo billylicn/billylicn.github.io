@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<!-- saved from url=(0096)https://ke.qq.com/webcourse/index.html#cid=847907&term_id=100946287&taid=5378789409091619&lite=1 -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>高高课堂</title>
+  <meta name="keywords" content="腾讯课堂,腾讯教育,远程教育,公开课,网络公开课,在线学习,在线教育,在线培训,在线课堂,名师讲堂,视频课程">
+  <meta name="description" itemprop="description" content="快来直播教室观看直播课程，并参与现场讨论，让学习成就梦想！">
+  <meta itemprop="name" content="腾讯课堂-直播教室">
+  <meta itemprop="image" content="//9.url.cn/edu/lego_modules/edu-ui/0.0.1/img/nohash/logo_pc_rich.png">
+  <script src="./高高课堂_files/hm.js.下载"></script><script>var T = { page_start: Date.now() };window._tx_webrtc_enable  = false;</script>
+  <link rel="dns-prefetch" href="https://7.url.cn/">
+  <link rel="dns-prefetch" href="https://8.url.cn/">
+  <link rel="dns-prefetch" href="https://9.url.cn/">
+  <link rel="stylesheet" href="./高高课堂_files/index_aac57271f16b785ca20bca23382352e0.css">
+  <!--STYLE-->
+  <script>
+    T.page_css_ready = Date.now();
+    // 一个hack，处理判断聊天区是否在webcourse
+    // 下次再挂 window 我就不是人
+    window.IS_WEBCOURSE = true;
+  </script>
+<style type="text/css">@charset "utf-8";
+
+@font-face {
+  font-family: 'videofont';
+  src: url(//7.url.cn/edu/webcourse/b4f387b3305bac84ed86d12dbe425599.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon-32:before {
+  content: "\E900";
+}
+
+.icon-volume:before {
+  content: "\E901";
+}
+
+.icon-mute:before {
+  content: "\E902";
+}
+
+.icon-full-screen:before {
+  content: "\E903";
+}
+
+.icon-exit-full-screen:before {
+  content: "\E904";
+}
+
+.icon-setting:before {
+  content: "\E905";
+}
+
+.video-cont {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #020202;
+  overflow: hidden;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.video-cont video::-webkit-media-controls {
+    display: none !important;
+  }
+
+.video-cont video::-moz-media-controls {
+    display: none !important;
+  }
+
+.video-cont video::-o-media-controls {
+    display: none !important;
+  }
+
+.video-cont video::media-controls {
+    display: none !important;
+  }
+
+.video-cont .main-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 40px);
+  }
+
+.video-cont .vice-video {
+    position: absolute;
+    width: 180px;
+    bottom: 40px;
+    right: 0px;
+  }
+
+.video-cont .stu-video {
+    position: absolute;
+    width: 180px;
+    bottom: 40px;
+    left: 0px;
+  }
+
+.video-cont .local-video {
+    position: absolute;
+    width: 180px;
+    top: 0px;
+    left: 0px;
+  }
+
+.video-cont .video-controls {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    z-index: 99474836499;
+    background-color: #1d1d1d;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 40px;
+
+  }
+
+.video-cont .video-controls [class^="icon-"], .video-cont .video-controls [class*=" icon-"] {
+      font-family: 'videofont' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      -webkit-font-feature-settings: normal;
+              font-feature-settings: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+.video-cont .video-controls .control-item {
+      padding: 0 10px 0 5px;
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+    }
+
+.video-cont .video-controls .control-item.network {
+        padding: 0 0px 0 10px;
+        width: 40px;
+
+      }
+
+.video-cont .video-controls .control-item.network i {
+          display: inline-block;
+          /* vertical-align: middle;*/
+          background-color: #20b51e;
+          width: 1px;
+          height: 10px;
+          line-height: 20px;
+          margin: 0 2px;
+        }
+
+.video-cont .video-controls .control-item.network.good i {
+            background-color: #20b51e;
+          }
+
+.video-cont .video-controls .control-item.network.middle i:nth-child(n+4){
+            /* display: none;*/
+            background-color: #666;
+          }
+
+.video-cont .video-controls .control-item.network.middle i {
+            background-color: #f1c31a;
+          }
+
+.video-cont .video-controls .control-item.network.bad i {
+            background-color: #ec2525;
+          }
+
+.video-cont .video-controls .control-item.network.bad i:nth-child(n+2){
+            display: none;
+            background-color: #666;
+          }
+
+.video-cont .video-controls .control-item.time {
+        border-right: 1px solid #333333;
+        width: 50px;
+        -webkit-box-sizing: content-box;
+                box-sizing: content-box;
+      }
+
+.video-cont .video-controls .control-item.volume {
+        margin-right: 10px;
+        position: relative;
+      }
+
+.video-cont .video-controls .control-item.scale {
+        position: relative;
+      }
+
+.video-cont .video-controls .control-item .icon {
+        vertical-align: middle;
+        margin-top: 10px;
+        font-size: 20px;
+        display: inline-block;
+      }
+
+.video-cont .video-controls .control-item.open-video-button, .video-cont .video-controls .control-item.onstage-button {
+          font-size: 16px;
+          line-height: 40px;
+      }
+
+.video-cont .video-controls .left-panel {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      line-height: 20px;
+      font-size: 12px;
+      padding: 10px 0px;
+      width: 30%;
+    }
+
+.video-cont .video-controls .right-panel {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      line-height: 20px;
+      width: 70%;
+      height: 40px;
+      text-align: right;
+      margin-right: 5px;
+    }
+
+.video-cont .video-controls .right-panel .control-item {
+        display: inline-block;
+        margin: 0 0px;
+        cursor: pointer;
+      }
+
+.video-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: auto;
+  background-color: #1d1d1d;
+}
+
+.video-mask.not-support {
+      text-align: center;
+    }
+
+.video-mask.not-support .mask-bg {
+        background: url(//7.url.cn/edu/webcourse/43211752d76c4e286413420660af3681.png) center -60px no-repeat;
+        display: block !important;
+        height: 645px;
+        width: 750px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -322px;
+        margin-left: -375px;
+      }
+
+.video-mask .mask-bg {
+      display: none;
+    }
+
+.video-mask.wait-class {
+    background: url(//7.url.cn/edu/webcourse/02fbd50ad1af330168909b4818a45cbd.png) center center no-repeat #383c40;
+  }
+
+.video-mask.video-play-btn {
+    background: url(//7.url.cn/edu/webcourse/ea2b7c47604068efeecfbe4908c97767.png)18px 16px no-repeat;
+    display: block !important;
+    height: 72px;
+    width: 72px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    background-color: #fff;
+    border-radius: 100px;
+    line-height: 100px;
+    padding: 50px;
+  }
+
+.video-mask.change-video {
+    background: url(//7.url.cn/edu/webcourse/b3a02c711716ec2d84ed9c110ecba9e3.png) center center no-repeat #383c40;
+  }
+
+.video-mask .mask-wording {
+    position: relative;
+    top: 415px;
+  }
+
+.video-mask .mask-wording p {
+      color: #fff;
+      font-size: 36px;
+      line-height: 50px;
+    }
+
+.video-mask .mask-wording p span {
+        font-size: 24px;
+      }
+
+.video-mask .mask-wording p span a {
+          color: #fff;
+          padding: 0 10px;
+          text-decoration: none;
+        }
+
+.video-mask .download-chrome-btn {
+    width: 180px;
+    height: 40px;
+    background-color: #25b8ff;
+    font-size: 16px;
+    color: #fff;
+    line-height: 16px;
+    display: inline-block;
+    padding: 12px 74px;
+    margin-top: 30px;
+    border-radius: 5px;
+  }
+
+.video-mask .flash-play {
+    color: #23B8FF;
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    cursor: pointer;
+  }
+
+@-webkit-keyframes translateX{
+  0%{ -webkit-transform: translate3d(100%, 70%, 0);}
+  100%{ -webkit-transform: translate3d(0% ,70%, 0);}
+}
+
+@keyframes translateX{
+  0%{ -webkit-transform: translate3d(100%, 70%, 0); transform: translate3d(100%, 70%, 0);}
+  100%{ -webkit-transform: translate3d(0 ,70%, 0); transform: translate3d(0 ,70%, 0);}
+}
+
+@-webkit-keyframes translateX1{
+  0%{ -webkit-transform: translate3d(100%, 50%, 0);}
+  100%{ -webkit-transform: translate3d(0% ,50%, 0);}
+}
+
+@keyframes translateX1{
+  0%{ -webkit-transform: translate3d(100%, 50%, 0); transform: translate3d(100%, 50%, 0);}
+  100%{ -webkit-transform: translate3d(0 ,50%, 0); transform: translate3d(0 ,50%, 0);}
+}
+
+@-webkit-keyframes translateX2{
+  0%{ -webkit-transform: translate3d(100%, 30%, 0);}
+  100%{ -webkit-transform: translate3d(0% ,30%, 0);}
+}
+
+@keyframes translateX2{
+  0%{ -webkit-transform: translate3d(100%, 30%, 0); transform: translate3d(100%, 30%, 0);}
+  100%{ -webkit-transform: translate3d(0 ,30%, 0); transform: translate3d(0 ,30%, 0);}
+}
+
+.marquee {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.5;
+  }
+
+.marquee span {
+      color: #fff;
+      font-size: 18px;
+      -moz-text-shadow: #888888 0.1em 0.1em 0.2em;
+      text-shadow: #888888 0.1em 0.1em 0.2em;
+    }
+
+.animation0 {
+    -webkit-animation:translateX 30s ease-out infinite;
+    animation:translateX 30s ease-out infinite;
+  }
+
+.animation1 {
+    -webkit-animation:translateX1 30s ease-out infinite;
+    animation:translateX1 30s ease-out infinite;
+  }
+
+.animation2 {
+    -webkit-animation:translateX2 30s ease-out infinite;
+    animation:translateX2 30s ease-out infinite;
+  }
+
+.range-wrap {
+  width: 38px;
+  height: 163px;
+  position: absolute;
+  bottom: 10px;
+  left: -5px;
+  display: none;
+}
+
+.range-wrap .bg-layer {
+    height: 120px;
+    background: #333333;
+    border-radius: 2px;
+    position: relative;
+  }
+
+.range-wrap .bg-layer:after {
+      top: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: #333333;
+      border-color: rgba(51, 51, 51, 0);
+      border-top-color: #333333;
+      border-width: 7px;
+      margin-left: -7px;
+    }
+
+.range-wrap .range-slider {
+    margin-top: 60px;
+    margin-left: -24px;
+    outline: none;
+    padding: 0;
+    width: 88px;
+    height: 2px;
+    background-color: #1d1d1d;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #51cc93), color-stop(100%, #51cc93));
+    background-image: -webkit-linear-gradient(#51cc93, #51cc93);
+    background-image: -o-linear-gradient(#51cc93, #51cc93);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#51cc93), to(#51cc93));
+    background-image: linear-gradient(#51cc93, #51cc93);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+
+.range-wrap .range-slider::-webkit-slider-runnable-track {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none;
+    background: transparent;
+    -webkit-appearance: none;
+  }
+
+.range-wrap .range-slider::-moz-range-track {
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+
+.range-wrap .range-slider::-moz-focus-outer {
+    border: 0;
+  }
+
+.range-wrap .range-slider::-webkit-slider-thumb {
+    width: 12px;
+    height: 12px;
+    border: 0;
+    background: #fff;
+    border-radius: 100%;
+    -webkit-box-shadow: 0 0 1px 0px rgba(0, 0, 0, .1);
+            box-shadow: 0 0 1px 0px rgba(0, 0, 0, .1);
+    -webkit-appearance: none;
+  }
+
+.range-wrap .range-slider::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border: 0;
+    background: #fff;
+    border-radius: 100%;
+    box-shadow: 0 0 1px 0px rgba(0, 0, 0, .1);
+  }
+
+.icon-volume, .icon-mute {
+  cursor: pointer;
+}
+
+.scale-wrap {
+  width: 120px;
+  height: 90px;
+  display: none;
+  background-color: #16171b;
+  padding: 0px 8px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  top: -90px;
+  right: -40px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.scale-wrap.onstage-list {
+      right: 100px;
+  }
+
+.scale-wrap.actived {
+    display: block;
+  }
+
+.scale-wrap .scale-button {
+    line-height: 45px;
+    color: #8c8c8d;
+  }
+
+.scale-wrap .scale-button.actived {
+      color: #0083e0;
+    }
+
+.scale-wrap .scale-button:nth-child(1){
+    border-bottom: 1px solid #24262b;
+  }
+
+.debug-box {
+  background: #1c1c1c;
+  background: rgba(28, 28, 28, .9);
+  text-shadow: 0 0 2px rgba(0, 0, 0, .5);
+  color: #fff;
+  width: 200px;
+  position: absolute;
+  line-height: 25px;
+  padding: 3px;
+  border: 1px solid #eee;
+  width: 250px;
+  display: none;
+}
+
+.debug-box.show {
+    display: block;
+  }
+
+.debug-box li {
+    cursor: pointer;
+  }
+
+.debug-box li:hover {
+      background-color:#2c2b2b;
+      background-color:rgba(44, 43, 43, .9);
+    }
+
+.debug-pop {
+  position: absolute;
+  /* right: 300px;*/
+  background: #1c1c1c;
+  background: rgba(28, 28, 28, .9);
+  text-shadow: 0 0 2px rgba(0, 0, 0, .5);
+  color: #fff;
+  display: none;
+  padding: 3px 10px;
+  left: 0px;
+}
+
+.debug-pop.show {
+    display: block;
+  }
+
+#hand{
+  min-width: 48px;
+  height: 48px;
+  position: absolute;
+  bottom: 64px;
+  left: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 3000;
+  cursor: pointer;
+  display: none;
+}
+
+#hand.show {
+    width: 48px;
+    height: 48px;
+    display: block;
+    -webkit-transform: translate(0%,0%);
+        -ms-transform: translate(0%,0%);
+            transform: translate(0%,0%);
+    background-image: url(//7.url.cn/edu/webcourse/8a00eb135328ae2fc11ca3500bd81bcb.png);
+  }
+
+#hand.show.first{
+    width: 48px;
+    height: 48px;
+    display: block;
+    -webkit-transform: translate(0%,0%);
+        -ms-transform: translate(0%,0%);
+            transform: translate(0%,0%);
+    background-image: url(//7.url.cn/edu/webcourse/8a00eb135328ae2fc11ca3500bd81bcb.png);
+    -webkit-animation: handOn 3s;
+            animation: handOn 3s;
+  }
+
+#hand.show.first:after{
+      display: block;
+      content:'\53D1\8D77\4E3E\624B';
+      color: #fff;
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 0px;
+      opacity: 1;
+      -webkit-animation: handOnAfer 3s;
+              animation: handOnAfer 3s;
+    }
+
+#hand.raised{
+    background-image: url(//7.url.cn/edu/webcourse/5c0aa5bb9e612dac5f2ccfc0df0a43cd.png);
+    width: 248px;
+    height: 48px;
+    display: block;
+  }
+
+#hand.calling{
+    background-image: url(//7.url.cn/edu/webcourse/02b3b713f62502d5263192b9514b7555.png);
+    width: 248px;
+    height: 48px;
+    display: block;
+  }
+
+@-webkit-keyframes handOn{
+  0%{
+    width: 80px;
+    height: 80px;
+    bottom: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,30%);
+            transform: translate(-50%,30%);
+    background-image: url(//7.url.cn/edu/webcourse/71b7fe673445eb2a55c48930a4523dd1.png);
+  }
+  80%{
+    width: 80px;
+    height: 80px;
+    bottom: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,30%);
+            transform: translate(-50%,30%);
+    background-image: url(//7.url.cn/edu/webcourse/71b7fe673445eb2a55c48930a4523dd1.png);
+  }
+  100%{
+    width: 48px;
+    height: 48px;
+    bottom: 64px;
+    left: 24px;
+    -webkit-transform: translate(0%,0%);
+            transform: translate(0%,0%);
+    background-image: url(//7.url.cn/edu/webcourse/8a00eb135328ae2fc11ca3500bd81bcb.png);
+  }
+
+}
+
+@keyframes handOn{
+  0%{
+    width: 80px;
+    height: 80px;
+    bottom: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,30%);
+            transform: translate(-50%,30%);
+    background-image: url(//7.url.cn/edu/webcourse/71b7fe673445eb2a55c48930a4523dd1.png);
+  }
+  80%{
+    width: 80px;
+    height: 80px;
+    bottom: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,30%);
+            transform: translate(-50%,30%);
+    background-image: url(//7.url.cn/edu/webcourse/71b7fe673445eb2a55c48930a4523dd1.png);
+  }
+  100%{
+    width: 48px;
+    height: 48px;
+    bottom: 64px;
+    left: 24px;
+    -webkit-transform: translate(0%,0%);
+            transform: translate(0%,0%);
+    background-image: url(//7.url.cn/edu/webcourse/8a00eb135328ae2fc11ca3500bd81bcb.png);
+  }
+
+}
+
+@-webkit-keyframes handOnAfer{
+  0%{
+    font-size: 12px;
+    opacity: 1;
+  }
+  80%{
+    font-size: 12px;
+    opacity: 1;
+  }
+  100%{
+      font-size: 0px;
+      opacity: 0;
+  }
+}
+
+@keyframes handOnAfer{
+  0%{
+    font-size: 12px;
+    opacity: 1;
+  }
+  80%{
+    font-size: 12px;
+    opacity: 1;
+  }
+  100%{
+      font-size: 0px;
+      opacity: 0;
+  }
+}
+</style><style></style></head>
+<body><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute; width: 0; height: 0" id="__SVG_SPRITE_NODE__"><symbol viewBox="0 0 32 32" id="course-data"><path d="M30 25.187c0 .762-.591 1.413-1.321 1.413H3.32c-.729 0-1.321-.651-1.321-1.413V9.946c0-.762.591-1.346 1.321-1.346h25.358c.729 0 1.321.584 1.321 1.346v15.241zM2.65 7.933h9.805l-.416-1.216c-.244-.774-1.066-1.317-1.802-1.317H3.333C2.597 5.4 2 5.997 2 6.733v1.366a1.35 1.35 0 0 1 .65-.166z"></path></symbol><symbol viewBox="0 0 32 32" id="course-live"><path d="M28.6 6.067H3.267c-.736 0-1.333.597-1.333 1.333v17.333c0 .736.597 1.333 1.333 1.333H28.6c.736 0 1.333-.597 1.333-1.333V7.4c0-.736-.597-1.333-1.333-1.333zM12.267 20.67v-9.23l7.994 4.615-7.994 4.615z"></path></symbol><symbol viewBox="0 0 32 32" id="course-record"><path d="M30 6.944l-8.067 5.56V8.233c0-.726-.543-1.3-1.253-1.3H3.252c-.71 0-1.32.574-1.32 1.3v15.372a1.34 1.34 0 0 0 1.32 1.328H20.68c.71 0 1.253-.602 1.253-1.328v-4.221L30 25.027V6.943z"></path></symbol><symbol viewBox="0 0 32 32" id="course-test"><path d="M30 6.267c0-.736-.597-1.333-1.333-1.333H3.334c-.736 0-1.333.597-1.333 1.333V25.6c0 .736.597 1.333 1.333 1.333h25.333c.736 0 1.333-.597 1.333-1.333V6.267zM15.304 21.533L14.107 18.4H9.816l-1.127 3.133H7.247l3.941-10.267h1.463l4.2 10.267h-1.547zm9.096-4.466h-2.8v2.8h-1.2v-2.8h-2.8v-1.2h2.8v-2.8h1.2v2.8h2.8v1.2zm-12.512-4.733a13.314 13.314 0 0 1-.553 1.975l-1.127 3.025h3.479l-1.071-2.857a27.948 27.948 0 0 1-.728-2.143z"></path></symbol></svg>
+<div id="index_aac57271f16b785ca20bca23382352e0"></div><script>function customGetComputedStyle(e,t){return e.currentStyle?e.currentStyle[t]:window.getComputedStyle&&window.getComputedStyle(e,null)?window.getComputedStyle(e,null).getPropertyValue(t):e.style[t]}window.IMWEB_WEBPACK={},IMWEB_WEBPACK.CSSARRAY=[{name:"index_aac57271f16b785ca20bca23382352e0",url:"//7.url.cn/edu/webcourse/index_aac57271f16b785ca20bca23382352e0.css"}];for(var i=0;i<IMWEB_WEBPACK.CSSARRAY.length;i++){var div=document.getElementById(IMWEB_WEBPACK.CSSARRAY[i].name);if("none"!==customGetComputedStyle(div,"display")){var newLink=document.createElement("link");newLink.rel="stylesheet",newLink.href=IMWEB_WEBPACK.CSSARRAY[i].url.replace("7.url.cn/edu","ke.qq.com"),document.head.appendChild(newLink),window.BJ_REPORT&&BJ_REPORT.report({level:2,msg:"css retry: "+newLink.href,ext:{msid:33712509}})}}</script><script>function IMWEB_WEBPACK_JS_ONLOAD(e){if(IMWEB_WEBPACK.firstLoad)for(;IMWEB_WEBPACK.jsRunCnt<IMWEB_WEBPACK.JSARRAY.length;){var n=IMWEB_WEBPACK.JSARRAY[IMWEB_WEBPACK.jsRunCnt];if(n.name===e)n.isLoad=!0,window["IMWEB_WEBPACK_"+n.name](),IMWEB_WEBPACK.jsRunCnt++;else if(-1!==n.name.indexOf("ie")&&-1===navigator.userAgent.indexOf("MSIE")){IMWEB_WEBPACK.jsRunCnt++;continue}break}else IMWEB_WEBPACK.jsLoadedCnt++,IMWEB_WEBPACK.jsLoadedCnt===IMWEB_WEBPACK.JSARRAY.length&&IMWEB_WEBPACK_RunScripts(),window.BJ_REPORT&&BJ_REPORT.report({level:2,msg:"js retry success: "+e,ext:{msid:3172411}})}IMWEB_WEBPACK.JSARRAY=[{name:"WebRTCAPI_edu_v1",url:"//7.url.cn/edu/webcourse/WebRTCAPI_edu_v1.0.2.min.js"},{name:"ie_polyfill_56545017b25c1ffb3c30",url:"//7.url.cn/edu/webcourse/ie_polyfill_56545017b25c1ffb3c30.js"},{name:"vendor_a140c8099ab8c47a4117",url:"//7.url.cn/edu/webcourse/vendor_a140c8099ab8c47a4117.js"},{name:"index_25e281017e5634f8ff5a",url:"//7.url.cn/edu/webcourse/index_25e281017e5634f8ff5a.js"}],IMWEB_WEBPACK.firstLoad=!0,IMWEB_WEBPACK.jsRunCnt=0;</script>
+
+<div id="react-body" class="web"><div class="study-header"><div class="contents-icon header-item"><i class="icon-css icon-css-list icon-css--m"></i>目录</div><div class="current-task-name header-item" title="高高课堂">高高课堂</div><div class="sign-tips header-item applied-tip"><i class="i-custom-tick"></i><span class="applied-text">已报名</span></div><div class="operations"><div class="share header-item">分享<div class="share-popup hidden"><div class="code-popup"><div class="share-content"><ul class="share-list"><li class="share-qq"><div class="share-qq-logo"></div><span>分享给QQ好友</span></li><li class="share-qzone"><div class="share-qzone-logo"></div><span>分享到QQ空间</span></li></ul><ul class="code-list"><li class="weapp-code"><span><i class="icon-font i-weixin"></i>微信扫码</span><div><div class="weapp-code-pic" style="width: 96px; height: 96px;"><img src="blob:https://ke.qq.com/cc191db6-3a40-45f7-bc7c-af3c97310ca2" alt="小程序码"></div><a class="download" download="weappCode.jpg" data-download="weappCode.jpg" href="blob:https://ke.qq.com/cc191db6-3a40-45f7-bc7c-af3c97310ca2">点击保存</a></div></li><li class="qrcode"><span><i class="icon-font i-qq"></i>QQ扫码</span><div><div class="qrcode-pic" style="width: 96px; height: 96px;"><div class="qrcode-logo"></div><canvas height="96" width="96" style="height: 96px; width: 96px;"></canvas></div><a class="download" download="qrcode.jpg" data-download="qrcode.jpg" href="blob:https://ke.qq.com/4cc42320-9b5b-4260-9e76-d5e64eead1a6">点击保存</a></div></li></ul></div></div></div></div><div class="mobile-watch header-item">用手机看<div class="mobile-watch-popup hidden"><div class="code-popup"><p class="mobile-tips">扫一扫继续用手机看</p><ul class="code-list"><li class="weapp-code"><div><div class="weapp-code-pic" style="width: 96px; height: 96px;"><img src="blob:https://ke.qq.com/cc191db6-3a40-45f7-bc7c-af3c97310ca2" alt="小程序码"></div></div><p class="code-desc"><i class="icon-font i-weixin"></i>微信扫码</p></li><li class="qrcode"><div><div class="qrcode-pic" style="width: 96px; height: 96px;"><div class="qrcode-logo"></div><canvas height="96" width="96" style="height: 96px; width: 96px;"></canvas></div></div><p class="code-desc"><i class="icon-font i-qq"></i>QQ扫码</p></li></ul><a class="go-app" href="https://ke.qq.com/download/app.html" target="_blank">下载手机APP</a></div></div></div><div class="share header-item"><span class="jump-client-hint">客户端上课</span></div><div class="complain header-item"><span class="show-complain">投诉</span></div><div class="header-item etc"><i class="icon-css icon-css-dots icon-css--m"></i><ul class="etc-menu hidden"><li class="li-item"><a href="https://support.qq.com/products/1290" target="__blank">意见反馈</a></li><li class="li-item"><div class="complain header-item"><span class="show-complain">投诉</span></div></li><li class="li-item"><a href="https://ke.qq.com/faq.html#/0/3" rel="nofollow" target="__blank">帮助</a></li></ul></div><span class="real-name header-item"><span class="im-icon icon-font icon-v-bottom i-v-bottom"></span>3075···</span><div class="header-item profile"><div class="s-avatar"><img class="avatar-img img--full-radius" src="./高高课堂_files/g" alt="30750李智" width="32" height="32"></div><ul class="profile-menu hidden"><li class="li-item"><a href="https://ke.qq.com/user/index/index.html#sid=plan" target="_blank" rel="noopener noreferrer">课程表</a></li><li class="li-item"><a href="https://ke.qq.com/user/index/index.html#sid=coupon" target="_blank" rel="noopener noreferrer">优惠券</a></li><li class="li-item"><a href="https://ke.qq.com/user/index/index.html#sid=signup" target="_blank" rel="noopener noreferrer">报名记录</a></li><li class="li-item"><a href="https://ke.qq.com/user/index/index.html#sid=fav" target="_blank" rel="noopener noreferrer">收藏</a></li><li class="li-item last"><span>退出</span></li></ul></div></div></div><div class="chat-ctn"><div class="app-root"><div class="im-tab tab-wrap"><div class="im-tab-hd im-tab-hd--bottom im-tab-hd--small"><a href="javascript:void(0);" class="active">讨论</a><a href="javascript:void(0);" class="">成员(261)</a></div><div class="im-tab-bd"><div class="im-tab-panel"></div></div></div><div class="app-main"><div class="main-ctn-wrap"><div class="chat-wrap"><div class="chat-list"><div class="platform-msg-ctn"><div class="platform-msg-title">腾讯课堂</div><p class="platform-msg-str">提示：严禁出现违法违规发言信息，视违反情节轻重追究责任。用户手机账号仅提供给该课老师，腾讯课堂不会以考勤等理由向用户发送短信或收取费用，谨防欺诈。</p></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30939钱安琪🎬"><span class="member-item-inner member-item-inner-fullline">30939钱安琪🎬</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="1032052017" data-uin="2931003383" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;改善，生产力，蒸汽&quot;}]" data-role="6" data-msgtype="0"><span>改善，生产力，蒸汽</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30948张亚宁📚"><span class="member-item-inner member-item-inner-fullline">30948张亚宁📚</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="533958901" data-uin="781606507" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;蒸汽&quot;}]" data-role="6" data-msgtype="0"><span>蒸汽</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30911凌曦"><span class="member-item-inner member-item-inner-fullline">30911凌曦</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="1299304389" data-uin="1525637671" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;如果他没有明确写弊端是不是可以不用写&quot;}]" data-role="6" data-msgtype="0"><span>如果他没有明确写弊端是不是可以不用写</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30514南贺智"><span class="member-item-inner member-item-inner-fullline">30514南贺智</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="2146660198" data-uin="3071981296" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;能源&quot;}]" data-role="6" data-msgtype="0"><span>能源</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30809李佳桐 腓特烈一世"><span class="member-item-inner member-item-inner-fullline">30809李佳桐 腓特烈一世</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="4226193091" data-uin="1766978907" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;雾都&quot;}]" data-role="6" data-msgtype="0"><span>雾都</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30809李佳桐 腓特烈一世"><span class="member-item-inner member-item-inner-fullline">30809李佳桐 腓特烈一世</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="266202825" data-uin="1766978907" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;煤炭&quot;}]" data-role="6" data-msgtype="0"><span>煤炭</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30742阮晗"><span class="member-item-inner member-item-inner-fullline">30742阮晗</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="2289914393" data-uin="2388069064" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;煤炭&quot;}]" data-role="6" data-msgtype="0"><span>煤炭</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30817沈俊涛"><span class="member-item-inner member-item-inner-fullline">30817沈俊涛</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="2198906883" data-uin="2623393883" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;整齐&quot;}]" data-role="6" data-msgtype="0"><span>整齐</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30513卢承乐"><span class="member-item-inner member-item-inner-fullline">30513卢承乐</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="964150343" data-uin="2545592811" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;没&quot;}]" data-role="6" data-msgtype="0"><span>没</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30514南贺智"><span class="member-item-inner member-item-inner-fullline">30514南贺智</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="639302346" data-uin="3071981296" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;煤炭&quot;}]" data-role="6" data-msgtype="0"><span>煤炭</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30447张娉婷"><span class="member-item-inner member-item-inner-fullline">30447张娉婷</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="2413492672" data-uin="573865553" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;煤炭&quot;}]" data-role="6" data-msgtype="0"><span>煤炭</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="肖育壮📺"><span class="member-item-inner member-item-inner-fullline">肖育壮📺</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="3383716075" data-uin="2902775918" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;煤&quot;}]" data-role="6" data-msgtype="0"><span>煤</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30749朱筱颖"><span class="member-item-inner member-item-inner-fullline">30749朱筱颖</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="1217657761" data-uin="1033129588" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;煤&quot;}]" data-role="6" data-msgtype="0"><span>煤</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30638刘航彤"><span class="member-item-inner member-item-inner-fullline">30638刘航彤</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="4039094205" data-uin="1721574367" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;煤&quot;}]" data-role="6" data-msgtype="0"><span>煤</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30803陈奇"><span class="member-item-inner member-item-inner-fullline">30803陈奇</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="678147538" data-uin="2060009838" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;烧煤&quot;}]" data-role="6" data-msgtype="0"><span>烧煤</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30947张笑也"><span class="member-item-inner member-item-inner-fullline">30947张笑也</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="445839359" data-uin="1127212290" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;煤炭&quot;}]" data-role="6" data-msgtype="0"><span>煤炭</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30401蔡烨阳"><span class="member-item-inner member-item-inner-fullline">30401蔡烨阳</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="2845183322" data-uin="2062913958" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;蒸汽&quot;}]" data-role="6" data-msgtype="0"><span>蒸汽</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30939钱安琪🎬"><span class="member-item-inner member-item-inner-fullline">30939钱安琪🎬</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="3762764431" data-uin="2931003383" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;煤炭&quot;}]" data-role="6" data-msgtype="0"><span>煤炭</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30511刘恒德🔌"><span class="member-item-inner member-item-inner-fullline">30511刘恒德🔌</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="1327288635" data-uin="1124455752" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;煤&quot;}]" data-role="6" data-msgtype="0"><span>煤</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30711唐楷宸"><span class="member-item-inner member-item-inner-fullline">30711唐楷宸</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="1576867334" data-uin="2799742378" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;煤&quot;}]" data-role="6" data-msgtype="0"><span>煤</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30711唐楷宸"><span class="member-item-inner member-item-inner-fullline">30711唐楷宸</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="4217484017" data-uin="2799742378" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;煤&quot;}]" data-role="6" data-msgtype="0"><span>煤</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30647郑淇允"><span class="member-item-inner member-item-inner-fullline">30647郑淇允</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="4141262847" data-uin="3088453349" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;煤&quot;}]" data-role="6" data-msgtype="0"><span>煤</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30648祝贺"><span class="member-item-inner member-item-inner-fullline">30648祝贺</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="4143579833" data-uin="2454194402" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;煤&quot;}]" data-role="6" data-msgtype="0"><span>煤</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30817沈俊涛"><span class="member-item-inner member-item-inner-fullline">30817沈俊涛</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="1739574957" data-uin="2623393883" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;煤炭&quot;}]" data-role="6" data-msgtype="0"><span>煤炭</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30942巫斯妮"><span class="member-item-inner member-item-inner-fullline">30942巫斯妮</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="331108577" data-uin="2316989434" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;煤炭&quot;}]" data-role="6" data-msgtype="0"><span>煤炭</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30645闫晗"><span class="member-item-inner member-item-inner-fullline">30645闫晗</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="586458552" data-uin="1964411832" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;煤&quot;}]" data-role="6" data-msgtype="0"><span>煤</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30833黄馨瑶⚡"><span class="member-item-inner member-item-inner-fullline">30833黄馨瑶⚡</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="1178496605" data-uin="410401661" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;煤&quot;}]" data-role="6" data-msgtype="0"><span>煤</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30628陈飞扬"><span class="member-item-inner member-item-inner-fullline">30628陈飞扬</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="4147513740" data-uin="158112699" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;煤炭&quot;}]" data-role="6" data-msgtype="0"><span>煤炭</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30912刘心翔"><span class="member-item-inner member-item-inner-fullline">30912刘心翔</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="2833504487" data-uin="2473555496" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;煤炭&quot;}]" data-role="6" data-msgtype="0"><span>煤炭</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30503冯家杰¿？"><span class="member-item-inner member-item-inner-fullline">30503冯家杰¿？</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="2650688093" data-uin="1602674844" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;煤炭&quot;}]" data-role="6" data-msgtype="0"><span>煤炭</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30827钟尹骏{川建国联络员}"><span class="member-item-inner member-item-inner-fullline">30827钟尹骏{川建国联络员}</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="1799479689" data-uin="2339185379" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;煤炭&quot;}]" data-role="6" data-msgtype="0"><span>煤炭</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30622袁明烨"><span class="member-item-inner member-item-inner-fullline">30622袁明烨</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="3028647556" data-uin="1259196596" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;煤炭&quot;}]" data-role="6" data-msgtype="0"><span>煤炭</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30830邓淑曼"><span class="member-item-inner member-item-inner-fullline">30830邓淑曼</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="86763485" data-uin="1481743421" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;煤炭&quot;}]" data-role="6" data-msgtype="0"><span>煤炭</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30928伯如冰"><span class="member-item-inner member-item-inner-fullline">30928伯如冰</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="891262999" data-uin="1216828972" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;煤&quot;}]" data-role="6" data-msgtype="0"><span>煤</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30916彭乐巍"><span class="member-item-inner member-item-inner-fullline">30916彭乐巍</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="1620036874" data-uin="744924074" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;煤&quot;}]" data-role="6" data-msgtype="0"><span>煤</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30735李佳颖"><span class="member-item-inner member-item-inner-fullline">30735李佳颖</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="1138883665" data-uin="3196033981" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;煤炭&quot;}]" data-role="6" data-msgtype="0"><span>煤炭</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="肖育壮🖥"><span class="member-item-inner member-item-inner-fullline">肖育壮🖥</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="2644397933" data-uin="3212186637" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;煤炭&quot;}]" data-role="6" data-msgtype="0"><span>煤炭</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30616王子恒"><span class="member-item-inner member-item-inner-fullline">30616王子恒</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="1549092937" data-uin="1642753937" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;炭&quot;}]" data-role="6" data-msgtype="0"><span>炭</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30939钱安琪🎬"><span class="member-item-inner member-item-inner-fullline">30939钱安琪🎬</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="1602165419" data-uin="2931003383" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;插座王&quot;}]" data-role="6" data-msgtype="0"><span>插座王</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30408胡睿康💀"><span class="member-item-inner member-item-inner-fullline">30408胡睿康💀</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="992078802" data-uin="2085687168" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;???????&quot;}]" data-role="6" data-msgtype="0"><span>???????</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30809李佳桐 腓特烈一世"><span class="member-item-inner member-item-inner-fullline">30809李佳桐 腓特烈一世</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="2473573549" data-uin="1766978907" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;S.H.I.T&quot;}]" data-role="6" data-msgtype="0"><span>S.H.I.T</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30511刘恒德🔌"><span class="member-item-inner member-item-inner-fullline">30511刘恒德🔌</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="1143651535" data-uin="1124455752" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;发生了什么&quot;}]" data-role="6" data-msgtype="0"><span>发生了什么</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30911凌曦"><span class="member-item-inner member-item-inner-fullline">30911凌曦</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="3935356457" data-uin="1525637671" data-msg="[{&quot;type&quot;:3,&quot;value&quot;:&quot;//p.qpic.cn/edu_msgpic/0/3A7BB501D041D2FFF4BC816656850F48/0&quot;}]" data-role="6" data-msgtype="0"><img alt="" src="./高高课堂_files/240"></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30911凌曦"><span class="member-item-inner member-item-inner-fullline">30911凌曦</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="639812554" data-uin="1525637671" data-msg="[{&quot;type&quot;:3,&quot;value&quot;:&quot;//p.qpic.cn/edu_msgpic/0/3A7BB501D041D2FFF4BC816656850F48/0&quot;}]" data-role="6" data-msgtype="0"><img alt="" src="./高高课堂_files/240"></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30911凌曦"><span class="member-item-inner member-item-inner-fullline">30911凌曦</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="4077777780" data-uin="1525637671" data-msg="[{&quot;type&quot;:3,&quot;value&quot;:&quot;//p.qpic.cn/edu_msgpic/0/3A7BB501D041D2FFF4BC816656850F48/0&quot;}]" data-role="6" data-msgtype="0"><img alt="" src="./高高课堂_files/240"></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30707刘一达"><span class="member-item-inner member-item-inner-fullline">30707刘一达</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="2603541690" data-uin="2546085948" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;不用啊&quot;}]" data-role="6" data-msgtype="0"><span>不用啊</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30708马梓硕"><span class="member-item-inner member-item-inner-fullline">30708马梓硕</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="1289941915" data-uin="1804992442" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;同问&quot;}]" data-role="6" data-msgtype="0"><span>同问</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30708马梓硕"><span class="member-item-inner member-item-inner-fullline">30708马梓硕</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="803020468" data-uin="1804992442" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;谢谢谢谢&quot;}]" data-role="6" data-msgtype="0"><span>谢谢谢谢</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30707刘一达"><span class="member-item-inner member-item-inner-fullline">30707刘一达</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="880699628" data-uin="2546085948" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;不用&quot;}]" data-role="6" data-msgtype="0"><span>不用</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30911凌曦"><span class="member-item-inner member-item-inner-fullline">30911凌曦</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="974596909" data-uin="1525637671" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;ok&quot;}]" data-role="6" data-msgtype="0"><span>ok</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30939钱安琪🎬"><span class="member-item-inner member-item-inner-fullline">30939钱安琪🎬</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="4262991986" data-uin="2931003383" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;蒸汽机&quot;}]" data-role="6" data-msgtype="0"><span>蒸汽机</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30609梁珂玮 PJ"><span class="member-item-inner member-item-inner-fullline">30609梁珂玮 PJ</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="4130439179" data-uin="1034719256" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;一分一个点‘&quot;}]" data-role="6" data-msgtype="0"><span>一分一个点‘</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30514南贺智"><span class="member-item-inner member-item-inner-fullline">30514南贺智</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="1748523206" data-uin="3071981296" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;方便了交通&quot;}]" data-role="6" data-msgtype="0"><span>方便了交通</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30939钱安琪🎬"><span class="member-item-inner member-item-inner-fullline">30939钱安琪🎬</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="934613578" data-uin="2931003383" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;19&quot;}]" data-role="6" data-msgtype="0"><span>19</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30939钱安琪🎬"><span class="member-item-inner member-item-inner-fullline">30939钱安琪🎬</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="813416821" data-uin="2931003383" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;美德&quot;}]" data-role="6" data-msgtype="0"><span>美德</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30511刘恒德🔌"><span class="member-item-inner member-item-inner-fullline">30511刘恒德🔌</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="951223795" data-uin="1124455752" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;传统美德&quot;}]" data-role="6" data-msgtype="0"><span>传统美德</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="肖育壮📺"><span class="member-item-inner member-item-inner-fullline">肖育壮📺</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="870006461" data-uin="2902775918" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;有空常联系，朋友&quot;}]" data-role="6" data-msgtype="0"><span>有空常联系，朋友</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30707刘一达"><span class="member-item-inner member-item-inner-fullline">30707刘一达</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="709975341" data-uin="2546085948" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;气&quot;}]" data-role="6" data-msgtype="0"><span>气</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30939钱安琪🎬"><span class="member-item-inner member-item-inner-fullline">30939钱安琪🎬</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="1794386930" data-uin="2931003383" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;帕帕&quot;}]" data-role="6" data-msgtype="0"><span>帕帕</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30715王一贺       科穆宁遗统"><span class="member-item-inner member-item-inner-fullline">30715王一贺       科穆宁遗统</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="3643226124" data-uin="2067515967" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;？？&quot;}]" data-role="6" data-msgtype="0"><span>？？</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30742阮晗"><span class="member-item-inner member-item-inner-fullline">30742阮晗</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="1894698210" data-uin="2388069064" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;改名字&quot;}]" data-role="6" data-msgtype="0"><span>改名字</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30921肖麟"><span class="member-item-inner member-item-inner-fullline">30921肖麟</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="850229023" data-uin="1458887605" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;老师这个人不知道是谁&quot;},{&quot;type&quot;:3,&quot;value&quot;:&quot;//p.qpic.cn/edu_msgpic/0/CB4E2254C7CB60255E00F6FDEA6D61D8/0&quot;}]" data-role="6" data-msgtype="0"><span>老师这个人不知道是谁</span><img alt="" src="./高高课堂_files/240(1)"></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30715王一贺       科穆宁遗统"><span class="member-item-inner member-item-inner-fullline">30715王一贺       科穆宁遗统</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="1707407519" data-uin="2067515967" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;这样不好&quot;}]" data-role="6" data-msgtype="0"><span>这样不好</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30809李佳桐 腓特烈一世"><span class="member-item-inner member-item-inner-fullline">30809李佳桐 腓特烈一世</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="2225353616" data-uin="1766978907" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;好恶劣&quot;}]" data-role="6" data-msgtype="0"><span>好恶劣</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30749朱筱颖"><span class="member-item-inner member-item-inner-fullline">30749朱筱颖</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="3232291234" data-uin="1033129588" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;别瞎搞&quot;}]" data-role="6" data-msgtype="0"><span>别瞎搞</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="郭子彦"><span class="member-item-inner member-item-inner-fullline">郭子彦</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="2602532219" data-uin="742305724" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;又来&quot;}]" data-role="6" data-msgtype="0"><span>又来</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30708马梓硕"><span class="member-item-inner member-item-inner-fullline">30708马梓硕</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="1571180101" data-uin="1804992442" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;谁啊&quot;}]" data-role="6" data-msgtype="0"><span>谁啊</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30511刘恒德🔌"><span class="member-item-inner member-item-inner-fullline">30511刘恒德🔌</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="2052057585" data-uin="1124455752" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;发明王&quot;}]" data-role="6" data-msgtype="0"><span>发明王</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30809李佳桐 腓特烈一世"><span class="member-item-inner member-item-inner-fullline">30809李佳桐 腓特烈一世</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="2313939945" data-uin="1766978907" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;好像是xjw的父亲&quot;}]" data-role="6" data-msgtype="0"><span>好像是xjw的父亲</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30708马梓硕"><span class="member-item-inner member-item-inner-fullline">30708马梓硕</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="2715695057" data-uin="1804992442" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;这个人要搞几次！&quot;}]" data-role="6" data-msgtype="0"><span>这个人要搞几次！</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30707刘一达"><span class="member-item-inner member-item-inner-fullline">30707刘一达</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="3385916746" data-uin="2546085948" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;写电灯还是灯泡？&quot;}]" data-role="6" data-msgtype="0"><span>写电灯还是灯泡？</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="肖育壮📺"><span class="member-item-inner member-item-inner-fullline">肖育壮📺</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="2555401626" data-uin="2902775918" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;电灯&quot;}]" data-role="6" data-msgtype="0"><span>电灯</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30511刘恒德🔌"><span class="member-item-inner member-item-inner-fullline">30511刘恒德🔌</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="1485147794" data-uin="1124455752" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;电灯泡&quot;}]" data-role="6" data-msgtype="0"><span>电灯泡</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30707刘一达"><span class="member-item-inner member-item-inner-fullline">30707刘一达</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="377664102" data-uin="2546085948" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;好的&quot;}]" data-role="6" data-msgtype="0"><span>好的</span></div></div><div class="chat-item chat-item-msg"><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname member-item-nickname-fullline" title="30616王子恒"><span class="member-item-inner member-item-inner-fullline">30616王子恒</span><span class="member-item-suffix"></span></div></div></div><div class="chat-item-msg-content js-chat-item-msg-content" data-seq="3697437364" data-uin="1642753937" data-msg="[{&quot;type&quot;:1,&quot;value&quot;:&quot;电灯泡就完了&quot;}]" data-role="6" data-msgtype="0"><span>电灯泡就完了</span></div></div></div><div class="notice-wrap"><div class="chat-list-notice" style="display: none;"></div><div class="chat-list-notice" style="display: none;"></div></div><div class="text-editor"><div id="toolbar" class="text-editor-toolbar ql-toolbar ql-snow"><button type="button" class="toolbar-icon" title="选择表情"><svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20" height="20" viewBox="0 0 480 480"><g><path d="M240.087,48.912c-105.485,0-191,85.515-191,191c0,105.486,85.515,191,191,191s191-85.514,191-191 C431.087,134.427,345.573,48.912,240.087,48.912z M240.087,385.971c-80.666,0-146.059-65.393-146.059-146.059 S159.421,93.853,240.087,93.853s146.059,65.393,146.059,146.059C386.146,320.579,320.753,385.971,240.087,385.971z"></path> <ellipse cx="183.426" cy="196.255" rx="33.705" ry="44.941"></ellipse><ellipse cx="295.779" cy="195.132" rx="33.705" ry="44.941"></ellipse><path d="M239.977,308.552c-46.819,0-86.2-19.446-97.709-45.842c-1.979,5.701-3.034,11.665-3.034,17.809 c0,40.334,45.271,73.03,101.118,73.03s101.118-32.696,101.118-73.03c0-6.489-1.179-12.78-3.377-18.768 C327.128,288.633,287.363,308.552,239.977,308.552z"></path></g></svg></button><button type="button" class="toolbar-icon" title="发送图片"><svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20" height="20" viewBox="0 0 480 480"><path fill-rule="evenodd" clip-rule="evenodd" d="M30,76v327h420V76H30z M404,356H77V123h327V356z"></path><circle fill-rule="evenodd" clip-rule="evenodd" cx="176.19" cy="182.662" r="29.167"></circle><polygon fill-rule="evenodd" clip-rule="evenodd" points="384,333 384,187.655 344.445,154.876 204.447,278.004 150.454,239.897 96.481,279.409 97.133,333"></polygon></svg></button><input type="file" multiple="" accept="image/x-png,image/gif,image/jpeg,image/bmp" style="display: none;"><button type="button" class="toolbar-icon" title="献花"><svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20" height="20" viewBox="0 0 480 480"><g><path d="M283.974,271.389c42.219,0,75.986-35.746,75.986-77.965V66.006h0.233l-57.375 50.968l-54.588-58.872l-57.363,63.973 l-59.445-54.836v126.185c0,42.218,33.891,77.965,76.11,77.965h11.48v146.99h52.353v-146.99H283.974z"></path><path d="M381.346,310.095c0,0-53.029-4.628-82.882,25.225c-29.853,29.853-25.225,82.882-25.225,82.882s53.029,4.628,82.882-25.225 C385.974,363.124,381.346,310.095,381.346,310.095z"></path><path d="M99.966,310.095c0,0-4.628,53.029,25.225,82.882s82.882,25.225,82.882,25.225s4.628-53.029-25.225-82.882 C152.996,305.467,99.966,310.095,99.966,310.095z"></path></g></svg></button><button type="button" class="toolbar-icon fr" title="只看老师发言"><svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20" height="20" viewBox="0 0 480 480"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M300,270.771c-89.858,0-141.388,77.229-141.388,77.229 S208.645,425.229,300,425.229S441.388,348,441.388,348S389.858,270.771,300,270.771z M300,393c-26,0-47.077-20.147-47.077-45 c0-24.853,21.077-45,47.077-45s47.077,20.147,47.077,45C347.077,372.853,326,393,300,393z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M300,253.966c15.427,0,29.812,1.934,43.1,5.19 c-17.595-12.741-37.438-22.565-58.817-28.778c25.539-17.251,42.33-46.469,42.33-79.608c0-53.019-42.981-96-96-96s-96,42.981-96,96 c0,33.141,16.794,62.36,42.336,79.611c-79.919,23.22-138.336,96.978-138.336,184.389h48c0-77.042,60.502-139.954,136.586-143.812 C244.71,261.065,270.444,253.966,300,253.966z"></path></g></svg></button></div><div class="quill text-editor-input"><div class="ql-container ql-snow"><div class="ql-editor ql-blank" data-gramm="false" contenteditable="true"><p><br></p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div><div class="ql-tooltip ql-hidden"><a class="ql-preview" rel="noopener noreferrer" target="_blank" href="about:blank"></a><input type="text" data-formula="e=mc^2" data-link="https://quilljs.com" data-video="Embed URL"><a class="ql-action"></a><a class="ql-remove"></a></div></div></div><button class="im-btn text-editor-btn btn-default btn-s" title="">发 送</button><button class="im-btn text-enter-type-btn btn-default btn-s"><i class="text-enter-type-i"></i></button></div></div></div><div class="hide main-ctn-wrap"><div class="member-list-wrap fresh-show pager-show hide-search"><div class="member-refresh-btn">点击刷新成员列表</div><div class="member-list"><div class="member-item is-self-student is-teacher"><div class="member-item-avatar"><div title="老师" class="avatar avatar-tech-male member-item-avatar"></div></div><div class="member-item-content"><div class="member-item-nickname " title="高强"><span class="member-item-inner member-item-inner-fullline"><span class="member-item-role">老师</span>高强</span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30449蒋嘉瑜"><span class="member-item-inner member-item-inner-fullline">30449蒋嘉瑜</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30925张廷玉"><span class="member-item-inner member-item-inner-fullline">30925张廷玉</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30717肖佳炜☄️"><span class="member-item-inner member-item-inner-fullline">30717肖佳炜☄️</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30942巫斯妮"><span class="member-item-inner member-item-inner-fullline">30942巫斯妮</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30732邓茗之"><span class="member-item-inner member-item-inner-fullline">30732邓茗之</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30806郭越齐🌸"><span class="member-item-inner member-item-inner-fullline">30806郭越齐🌸</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30433胡芷其"><span class="member-item-inner member-item-inner-fullline">30433胡芷其</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30915欧文立"><span class="member-item-inner member-item-inner-fullline">30915欧文立</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30619杨瑞"><span class="member-item-inner member-item-inner-fullline">30619杨瑞</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30414刘希瑞"><span class="member-item-inner member-item-inner-fullline">30414刘希瑞</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30742阮晗"><span class="member-item-inner member-item-inner-fullline">30742阮晗</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30628陈飞扬"><span class="member-item-inner member-item-inner-fullline">30628陈飞扬</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30924张淳鑫"><span class="member-item-inner member-item-inner-fullline">30924张淳鑫</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30644肖可锐"><span class="member-item-inner member-item-inner-fullline">30644肖可锐</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30613罗灏☣™"><span class="member-item-inner member-item-inner-fullline">30613罗灏☣™</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="匿名用户"><span class="member-item-inner member-item-inner-fullline">匿名用户</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30815孟祥睿 抬棺舞蹈家"><span class="member-item-inner member-item-inner-fullline">30815孟祥睿 抬棺舞蹈家</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30914罗健涛"><span class="member-item-inner member-item-inner-fullline">30914罗健涛</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30938蒲雨微"><span class="member-item-inner member-item-inner-fullline">30938蒲雨微</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30713王文杰"><span class="member-item-inner member-item-inner-fullline">30713王文杰</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30748钟佳"><span class="member-item-inner member-item-inner-fullline">30748钟佳</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30948张亚宁📚"><span class="member-item-inner member-item-inner-fullline">30948张亚宁📚</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30949资源"><span class="member-item-inner member-item-inner-fullline">30949资源</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30546郑楠"><span class="member-item-inner member-item-inner-fullline">30546郑楠</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="肖育壮"><span class="member-item-inner member-item-inner-fullline">肖育壮</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30843肖阁芳(￣^￣)ゞ"><span class="member-item-inner member-item-inner-fullline">30843肖阁芳(￣^￣)ゞ</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30647郑淇允"><span class="member-item-inner member-item-inner-fullline">30647郑淇允</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30631古晨钰"><span class="member-item-inner member-item-inner-fullline">30631古晨钰</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30436李晓轩"><span class="member-item-inner member-item-inner-fullline">30436李晓轩</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30939钱安琪🎬"><span class="member-item-inner member-item-inner-fullline">30939钱安琪🎬</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30912刘心翔"><span class="member-item-inner member-item-inner-fullline">30912刘心翔</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30536林文贞"><span class="member-item-inner member-item-inner-fullline">30536林文贞</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30937马心延"><span class="member-item-inner member-item-inner-fullline">30937马心延</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30807赖益琛"><span class="member-item-inner member-item-inner-fullline">30807赖益琛</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30629陈卓琳"><span class="member-item-inner member-item-inner-fullline">30629陈卓琳</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30920吴嘉叙"><span class="member-item-inner member-item-inner-fullline">30920吴嘉叙</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30745韦达"><span class="member-item-inner member-item-inner-fullline">30745韦达</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30547庄慧玲"><span class="member-item-inner member-item-inner-fullline">30547庄慧玲</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30411李思霖/老师你猜我有没有挂机"><span class="member-item-inner member-item-inner-fullline">30411李思霖/老师你猜我有没有挂机</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30735李佳颖"><span class="member-item-inner member-item-inner-fullline">30735李佳颖</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30802陈立新♪( ´θ｀)ノ欢乐送"><span class="member-item-inner member-item-inner-fullline">30802陈立新♪( ´θ｀)ノ欢乐送</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30404陈星宇"><span class="member-item-inner member-item-inner-fullline">30404陈星宇</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="308张茜茹MG"><span class="member-item-inner member-item-inner-fullline">308张茜茹MG</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30907雷泽笙"><span class="member-item-inner member-item-inner-fullline">30907雷泽笙</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30421夏天"><span class="member-item-inner member-item-inner-fullline">30421夏天</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30511刘恒德💰"><span class="member-item-inner member-item-inner-fullline">30511刘恒德💰</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30817沈俊涛"><span class="member-item-inner member-item-inner-fullline">30817沈俊涛</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30416毛浚琛"><span class="member-item-inner member-item-inner-fullline">30416毛浚琛</span><span class="member-item-suffix"></span></div></div></div><div class="member-item is-self-student is-student"><div class="member-item-content"><div class="member-item-nickname " title="30809李佳桐 腓特烈一世"><span class="member-item-inner member-item-inner-fullline">30809李佳桐 腓特烈一世</span><span class="member-item-suffix"></span></div></div></div></div><div class="member-list-pager"><div class="member-list-pager-right">下一页<span class="im-icon icon-font i-v-right"></span></div></div></div></div></div></div></div><div class="playlist hidden"><div class="container"><ul class="chapters"><li class="fast"><div class="sub-title" title="当前课程">当前课程</div><div class="task-item fast active"><div class="task-item--prefix"><span class="task-item--type">直播</span></div><div class="task-item--tt"><div class="task-item--text">高高课堂</div><span class="task-item--suffix"></span><span class="task-item--live-label">正在直播</span></div></div></li><li class="fast"><div class="sub-title" title="历史回放">历史回放</div><div class="task-item fast"><div class="task-item--prefix"><span class="task-item--type">回放</span></div><div class="task-item--tt"><div class="task-item--text">111111</div><span class="task-item--suffix">2020-3-18 14:27 共6分钟</span></div></div><div class="task-item fast"><div class="task-item--prefix"><span class="task-item--type">回放</span></div><div class="task-item--tt"><div class="task-item--text">123</div><span class="task-item--suffix">2020-3-12 13:46 共2分钟</span></div></div><div class="task-item fast"><div class="task-item--prefix"><span class="task-item--type">回放</span></div><div class="task-item--tt"><div class="task-item--text">11</div><span class="task-item--suffix">2020-3-11 12:39 共10分钟</span></div></div><div class="task-item fast"><div class="task-item--prefix"><span class="task-item--type">回放</span></div><div class="task-item--tt"><div class="task-item--text">123</div><span class="task-item--suffix">2020-3-10 20:51 共37分钟</span></div></div><div class="task-item fast"><div class="task-item--prefix"><span class="task-item--type">回放</span></div><div class="task-item--tt"><div class="task-item--text">123</div><span class="task-item--suffix">2020-2-25 17:45 共94分钟</span></div></div><div class="task-item fast"><div class="task-item--prefix"><span class="task-item--type">回放</span></div><div class="task-item--tt"><div class="task-item--text">00</div><span class="task-item--suffix">2020-2-18 16:29 共7分钟</span></div></div><div class="task-item fast"><div class="task-item--prefix"><span class="task-item--type">回放</span></div><div class="task-item--tt"><div class="task-item--text">123</div><span class="task-item--suffix">2020-2-18 16:24 共2分钟</span></div></div><div class="task-item fast"><div class="task-item--prefix"><span class="task-item--type">回放</span></div><div class="task-item--tt"><div class="task-item--text">123</div><span class="task-item--suffix">2020-2-17 16:15 共5分钟</span></div></div></li></ul></div></div><div class="study-body mr"><div class="webrtc-ctn"><div id="webrtc-player-container" class="webrtc-ctn"><div id="videoContainer" class="video-cont"><video id="main_video" class="main-video" style="visibility: visible;"></video><video id="vice_video" class="vice-video"></video><video id="student_video" autoplay="" class="stu-video"></video><video id="local_video" autoplay="" class="local-video"></video><audio id="main_audio" autoplay=""></audio><div id="video_mask" class="video-mask" style="visibility: hidden;"><div class="mask-bg"><div class="mask-wording"><p>抱歉，您的浏览器不支持播放我们的直播课程<br><span>请下载最新版<a target="_blank" href="https://www.google.cn/intl/zh-CN/chrome/">谷歌Chrome浏览器</a>观看</span></p><a class="download-chrome-btn" target="_blank" href="https://www.google.cn/intl/zh-CN/chrome/">下载</a><a id="flash_player" class="flash-play">旧版本播放器观看</a></div></div></div><div id="debug_box" class="debug-box"><ul><li id="show_debug_pop">视频统计信息</li><li>IMWebRTC Player 4.2.47-beta</li><li>快直播webrtc</li><li id="close_debug_box">关闭</li></ul></div><div id="debug_pop" class="debug-pop"><div class="info-inline"><span>tinyid:</span><span>144115209813235106</span></div><div class="info-inline"><span>openid:</span><span>1611221554:100311743</span></div><div class="info-inline"><span> uin(video):</span><span>2747752701</span></div><div class="info-inline"><span>视频码率:</span><span>0 k/s</span></div><div class="info-inline"><span>主路视频帧率:</span><span>0 帧/s</span></div><div class="info-inline"><span>主路视频jitter:</span><span>0 ms</span></div><div class="info-inline"><span>主路视频分辨率:</span><span>0 x 0</span></div><div class="info-inline"><span>辅路视频jitter:</span><span>0 ms</span></div><div class="info-inline"><span>辅路视频帧率:</span><span>0 帧/s</span></div><div class="info-inline"><span>主路视频分辨率:</span><span>0 x 0</span></div><div class="info-inline"><span>音频码率:</span><span>0 k/s</span></div><div class="info-inline"><span>音频jitter:</span><span>0 ms</span></div></div><div id="videoControls" class="video-controls"><div class="left-panel"><div class="network control-item good"><i></i><i></i><i></i><i></i><i></i></div><div class="time control-item"><span title="已上课时间">00:47:22</span></div></div><div class="right-panel"><div class="control-item open-video-button open">打开摄像头</div><div id="controls_stuonstage" class="onstage-button control-item"><div class="stu-list-ct">举手列表<div class="scale-wrap onstage-list"></div></div></div><div id="controls_volume" class="volume control-item"><div class="icon icon-volume"></div><div class="range-wrap"><div class="bg-layer"><input type="range" class="range-slider" min="0" max="100" style="background-size: 100% 100%;"></div></div></div><div id="controls_scale" class="scale control-item"><div class="icon icon-setting"><div class="scale-wrap"><div class="scale-button scale actived">智能缩放</div><div class="scale-button original">原尺寸</div></div></div></div><div id="controls_screen" class="screen control-item"><div class="icon icon-full-screen"></div></div></div></div><a id="marquee" class="marquee animation1"><span>2843379680正在观看直播</span></a></div><div id="hand" class=""></div></div><div class="download-ctn ">客户端上直播课不卡顿<span class="jump-client-hint">客户端上课</span><i class="icon-font i-close js-download-close"></i></div></div></div></div>
+<!--只在IE下注入ie_polyfill-->
+<script>/* eslint-disable */
+(function() {
+  var location = window.location;
+  var href = location.href;
+  var protocol = location.protocol;
+  if (protocol === 'http:') {
+    location.protocol = 'https:';
+  }
+  // 移动设备进入web化课堂跳转任务详情页
+  var reg = /(iphone|ios|android|mini|mobile|mobi|Nokia|Symbian|iPod|iPad|Windows\s+Phone|MQQBrowser|wp7|wp8|UCBrowser7|UCWEB|360\s+Aphone\s+Browser)/i;
+  if(reg.test(navigator.userAgent)){
+    var cidResult = href.match(/[?#&](course_id|cid)=(\d+)/);
+    var tidResult = href.match(/[?#&]term_id=(\d+)/);
+    var taidResult = href.match(/[?#&]taid=(\d+)/);
+    var fromResult = href.match(/[?#&]from=(\w+)/);
+    var isLiteResult = href.match(/[?#&]lite=(\d+)/);
+    var vidResult = href.match(/[?#&]vid=(\d+)/)
+    var cid = cidResult && cidResult[2];
+    var tid = tidResult && tidResult[1];
+    var taid = taidResult && taidResult[1];
+    var from = fromResult && fromResult[1];
+    var lite = isLiteResult && isLiteResult[1];
+    var vid = vidResult && vidResult[1];
+    if (!lite) {
+      var url = '//m.ke.qq.com/taskList.html?_bid=167&_wv=1&cid=' + cid + '&tid=' + tid + '&taid=' + taid + '&from=' + from + '&fr=2';
+    } else {
+      if (taid) {
+        var url = '//m.ke.qq.com/m-core/taskList.html?_bid=167&_wv=3&cid=' + cid + '&tid=' + tid + '#taid=' + taid + '&vid=' + vid;
+      } else {
+        var url = '//m.ke.qq.com/m-core/live.html?_bid=167&_wv=1&cid=' + cid + '&term_id=' + tid + '&from=' + from + '&lite=' + lite;
+      }
+    }
+    window.location.href = url;
+  }
+  // 不允许四级域名访问，做一下跳转
+  if (location.host !== 'ke.qq.com') {
+    window.location.href = href.replace(location.host, 'ke.qq.com');
+  }
+  // 兼容题库嵌入需求
+  location.hash = location.hash.replace(/\?.*/, '');
+  var task_id = location.hash.match(/task_id=(.*?)(&|$)/),
+    exam_id = location.hash.match(/exam_id=(.*?)(&|$)/),
+    has_taid = /taid=/.test(location.hash),
+    has_vid = /vid=/.test(location.hash);
+  task_id && !has_taid && (window.location.hash += '&taid=' + task_id[1]);
+  exam_id && !has_vid && (window.location.hash += '&vid=' + exam_id[1]);
+  // IE8/9/10 跳旧版
+  var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
+  window.isIE = userAgent.indexOf("MSIE") > -1; //判断是否IE<11浏览器
+  window.isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+  if (window.isIE && !window.isIE11) {
+    // window.location.href = href.replace(/webcourse/, 'webcourse_old'); // 跳转webcouse旧版
+    window.location.href = href.replace(/index\.html/, 'upgrade.html'); // 跳转提示页面
+  }
+})();
+/* eslint-enable */
+</script>
+<script>var BJ_REPORT=function(a){function b(a){var b=document.cookie.match(new RegExp("(^| )"+a+"=([^;]*)(;|$)"));return b?decodeURIComponent(b[2]):""}function c(a){return a>=200&&a<=299||304===a}if(a.BJ_REPORT)return a.BJ_REPORT;var d=[],e={},f={id:0,uin:0,url:"",combo:1,ext:null,level:4,ignore:[],random:1,delay:1e3,submit:null,repeat:5,fulllink:!1,tcode:null,initPv:!0,pvMsg:"!#imweb-badjs-pv#!",costomStringify:null,passMonitorId:!1},g="//badjs.qq.com/badjs",h="application/json; charset=utf-8",i=a.location.href,j=function(a,b){return Object.prototype.toString.call(a)==="[object "+(b||"Object")+"]"},k=function(a){return"object"==typeof a&&!!a},l=function(a){return null===a||!j(a,"Number")&&!a},m=(parseInt(b("uid_type"),10),a.onerror);a.onerror=function(b,c,d,e,g){var h=b;g&&g.stack&&(h=o(g)),j(h,"Event")&&(h+=h.type?"--"+h.type+"--"+(h.target?h.target.tagName+"::"+h.target.src:""):"");var i={msg:h,level:4,target:c,rowNum:d,colNum:e};f.jsErrorMSID&&(i.ext={msid:f.jsErrorMSID}),B.push(i),y(),m&&m.apply(a,arguments)};var n=function(a){try{if(a.stack){var b=a.stack.match("https?://[^\n]+");b=b?b[0]:"";var c=b.match(":(\\d+):(\\d+)");c||(c=[0,0,0]);return{msg:o(a),rowNum:c[1],colNum:c[2],target:b.replace(c[0],"")}}return a.name&&a.message&&a.description?{msg:f.customStringify?f.customStringify(a):JSON.stringify(a)}:a}catch(b){return a}},o=function(a){var b=a.stack.replace(/\n/gi,"").split(/\bat\b/).slice(0,5).join("@").replace(/\?[^:]+/gi,""),c=a.toString();return b.indexOf(c)<0&&(b=c+"@"+b),b},p=function(a){if(!k(a))return!0;var b=a.msg;return(e[b]=(parseInt(e[b],10)||0)+1)>f.repeat},q=function(a,b){var c=[],d=[],e=[];if(k(a)){if(a.level=a.level||f.level,!a.ext){var g=null;switch(a.level){case 1:g=f.debugMSID;break;case 2:g=f.infoMSID;break;case 4:g=f.errorMSID}g&&(a.ext={msid:g})}for(var h in a){var i=a[h];if(!l(i)){if(k(i))try{i=f.customStringify?f.customStringify(i):JSON.stringify(i)}catch(a){i="[BJ_REPORT detect value stringify error] "+a.toString()}e.push(h+":"+i),c.push(h+"="+encodeURIComponent(i)),"id"!==h&&d.push(h+"["+b+"]="+encodeURIComponent(i))}}}return[d.join("&"),e.join(","),c.join("&")]},r=function(a){(new Image).src=a.replace(f.url,g)},s=function(a){if(f.submit)f.submit(a);else{var b=u(a);if(f.fulllink){var d=new XMLHttpRequest;d.open("post",b.url),d.setRequestHeader("content-type",h),d.send(b.data),d.onload=function(){var b,e=c(d.status);if(e)try{b=JSON.parse(d.responseText)}catch(a){}(!e||b&&"number"==typeof b.err&&0!==b.err)&&r(a)}}else r(a)}},t=function(a){setTimeout(function(){s(a)},0)},u=function(a){var b=v(a),c=b[0],d=b[1],e=[];if(f.fulllink){"string"==typeof d.msg&&(d.msg=[d.msg],d.level=[d.level],d.ext&&(d.ext=[d.ext]));for(var g=0;g<d.msg.length;g++){var h={content:d.msg[g],level:+d.level[g]};if(d.ext&&d.ext[g])try{var i=JSON.parse(d.ext[g]),j=parseInt(i,10);"number"==typeof j&&j===j?(h.ext={msid:parseInt(i,10)},f.passMonitorId&&(h.pass_fields=h.pass_fields||{},h.pass_fields.monitor_id=i.toString())):i.msid&&(h.ext={msid:parseInt(i.msid,10)},f.passMonitorId&&(h.pass_fields=h.pass_fields||{},h.pass_fields.monitor_id=i.msid.toString()))}catch(a){}f.tcode&&(h.cmd=f.tcode),e.push(h)}d={id:d.id,uin:d.uin,from:d.from,msg:e}}return{url:c,data:f.customStringify?f.customStringify(d):JSON.stringify(d)}},v=function(a){for(var b=a.split("?"),c=b[0],d=b[1],e={},f=d.split("&"),g=0;g<f.length;g++){var h=f[g].split("="),i=decodeURIComponent(h[0]),j=decodeURIComponent(h[1]||""),k=i.match(/\[\d+]$/);if(k){var l=k[0].match(/\d+/g)[0];i=i.replace(k[0],"");var m=e[i]||[];m[l]=j,e[i]=m}else e[i]=j}return[c,e]},w=[],x=0,y=function(a){if(f.report){for(;d.length;){var b=!1,c=d.shift();if(!p(c)){var e=q(c,w.length);if(j(f.ignore,"Array"))for(var g=0,h=f.ignore.length;g<h;g++){var i=f.ignore[g];if(j(i,"RegExp")&&i.test(e[1])||j(i,"Function")&&i(c,e[1])){b=!0;break}}if(!b){if(c.id&&c.id.toString()!==f.id.toString()){var k=(f.url||"/badjs")+"?uin="+f.uin+"&from="+encodeURIComponent(location.href)+"&";t(k+e[2]+"&_t="+ +new Date)}else f.combo?w.push(e[0]):t(f.report+e[2]+"&_t="+ +new Date);f.onReport&&f.onReport(f.id,c)}}}if(w.length){var l=function(){clearTimeout(x),t(f.report+w.join("&")+"&count="+w.length+"&_t="+ +new Date),x=0,w=[]};a?l():x||(x=setTimeout(l,f.delay))}}},z=function(a,b){var c=a;return k(a)?c.level=b:c={msg:a,level:b},c},A=function(){var a=parseInt(f.id,10);f.report=(f.url||"/badjs")+"?id="+a+"&uin="+f.uin+"&from="+encodeURIComponent(location.href)+"&"},B={push:function(a){var b=location.href;if(b!==i&&(B.report(),i=b,A()),Math.random()>=f.random)return B;var c=k(a)?n(a):{msg:a};return f.ext&&!c.ext&&(c.ext=f.ext),d.push(c),y(),B},report:function(a){return a&&B.push(a),y(!0),B},error:function(a){return a?(a=z(a,4),B.push(a),B):B},info:function(a){return a?(a=z(a,2),B.push(a),B):B},debug:function(a){return a?(a=z(a,1),B.push(a),B):B},pv:function(){return B.info(f.pvMsg)},init:function(a){if(k(a))for(var c in a)f[c]=a[c];return parseInt(f.id,10)&&(/qq\.com$/gi.test(location.hostname)&&(f.url||(f.url=g),f.uin||(f.uin=b("uin")||b("uid_uin")||b("p_luin")||b("p_uin"))),f.tcode=b("im_t_c"),A(),f.initPv&&B.pv()),B},bjReq:function(a){var b=q(a,0),c=g+"?uin="+f.uin+"&id="+f.id+"&from="+encodeURIComponent(location.href)+"&";(new Image).src=c+b[0]},__onerror__:a.onerror};if("undefined"!=typeof console&&console.error&&setTimeout(function(){var a=((location.hash||"").match(/([#&])BJ_ERROR=([^&$]+)/)||[])[2];a&&console.error("BJ_ERROR",decodeURIComponent(a).replace(/(:\d+:\d+)\s*/g,"$1\n"))},0),window.onhashchange){var C=window.onhashchange;window.onhashchange=function(a){C(a),B.pv()}}else window.onhashchange=function(){B.pv()};return B}(window);"undefined"!=typeof exports&&("undefined"!=typeof module&&module.exports&&(exports=module.exports=BJ_REPORT),exports.BJ_REPORT=BJ_REPORT),function(a){if(a.BJ_REPORT){var b,c=function(b){a.BJ_REPORT.error(b)},d=a.BJ_REPORT.tryJs=function(a){return a&&(c=a),d},e=function(a,b){var c;for(c in b)a[c]=b[c]},f=function(a){return"function"==typeof a},g=function(d,e){return function(){try{return d.apply(this,e||arguments)}catch(d){if(c(d),d.stack&&console&&console.error&&console.error("[BJ-REPORT]",d.stack),!b){var f=a.onerror;a.onerror=function(){},b=setTimeout(function(){a.onerror=f,b=null},50)}throw d}}},h=function(a){return function(){for(var b,c=[],d=0,e=arguments.length;d<e;d++)b=arguments[d],f(b)&&(b=g(b)),c.push(b);return a.apply(this,c)}},i=function(a){return function(b,c){if("string"==typeof b)try{b=new Function(b)}catch(a){throw a}var d=[].slice.call(arguments,2);return b=g(b,d.length&&d),a(b,c)}},j=function(a,b){return function(){for(var c,d,e=[],h=0,i=arguments.length;h<i;h++)c=arguments[h],f(c)&&(c.tryWrap?c.tryWrap:(d=g(c),c.tryWrap=d,c=d)),e.push(c);return a.apply(b||this,e)}},k=function(a){var b,c;for(b in a)c=a[b],f(c)&&(a[b]=g(c));return a};d.spyJquery=function(){var b=a.$;if(!b||!b.event)return d;var c,e;b.zepto?(c=b.fn.on,e=b.fn.off,b.fn.on=j(c),b.fn.off=function(){for(var a,b=[],c=0,d=arguments.length;c<d;c++)a=arguments[c],f(a)&&a.tryWrap&&(a=a.tryWrap),b.push(a);return e.apply(this,b)}):window.jQuery&&(c=b.event.add,e=b.event.remove,b.event.add=j(c),b.event.remove=function(){for(var a,b=[],c=0,d=arguments.length;c<d;c++)a=arguments[c],f(a)&&a.tryWrap&&(a=a.tryWrap),b.push(a);return e.apply(this,b)});var g=b.ajax;return g&&(b.ajax=function(a,c){return c||(c=a,a=void 0),k(c),a?g.call(b,a,c):g.call(b,c)}),d},d.spyModules=function(){var b=a.require,c=a.define;return c&&c.amd&&b&&(a.require=h(b),e(a.require,b),a.define=h(c),e(a.define,c)),a.seajs&&c&&(a.define=function(){for(var a,b=[],d=0,e=arguments.length;d<e;d++)a=arguments[d],f(a)&&(a=g(a),a.toString=function(a){return function(){return a.toString()}}(arguments[d])),b.push(a);return c.apply(this,b)},a.seajs.use=h(a.seajs.use),e(a.define,c)),d},d.spySystem=function(){return a.setTimeout=i(a.setTimeout),a.setInterval=i(a.setInterval),d},d.spyCustom=function(a){return f(a)?g(a):k(a)},d.spyAll=function(){return d.spyJquery().spyModules().spySystem(),d}}}(window);</script>
+<script>// 初始化badjs，没有经过babel请勿使用ES6语法
+/* eslint-disable */
+if (window.BJ_REPORT) {
+  var BJ_REPORT = window.BJ_REPORT;
+  var ignores = [
+    '"isTrigger":true,"namespace":"","namespace_re":null', // 腾讯视频使用jquery处理已移除元素事件的错误
+    'Query is not defined', // 一些浏览器插件报错，先屏蔽
+    '$ is not defined',
+    'letv is not defined',
+    '@ showTips', // qq浏览器下腾讯视频触发的bug
+    'Unexpected identifier after numeric literal', // 老版本Edge浏览器不能识别badjs代码中的1e写法
+    "缺少 ';'", // IE浏览器已做跳转处理
+    "Expected ';'",
+    'getQualityReportFronSafariAsync', // WebRTC SDK在Safari下的bug
+    'WebViewJavascriptBridge',
+    'vi.l.qq.com', // 腾讯视频
+    'vd.l.qq.com', // 腾讯视频
+    'vm.gtimg.cn', // 腾讯视频
+    'chrome-extension',
+    'moz-extension',
+    'NotSupportedError: Failed to construct:',
+  ];
+  BJ_REPORT.init({
+    id: 1414,
+    ignore: [
+      function (error) {
+        var str = JSON.stringify(error.msg || error) || '';
+        if (error.level === 4) {
+          for (var i = 0; i < ignores.length; i++) {
+            if (str.indexOf(ignores[i]) > -1 || str.indexOf(encodeURIComponent(ignores[i])) > -1) {
+              BJ_REPORT.info(error);
+              return true;
+            }
+          }
+        }
+        return false;
+      },
+    ],
+    repeat: 1,
+    jsErrorMSID: 3233841,
+    debugMSID: 3234595,
+    infoMSID: 3234596,
+    errorMSID: 3234597,
+    fulllink: true,
+    url: '//report.edu.qq.com/data_report/web_report',
+    passMonitorId: true,
+  });
+  BJ_REPORT.tryJs().spyAll();
+}
+</script>
+<script src="./高高课堂_files/WebRTCAPI_CLOUD_V4.js.下载" crossorigin="anonymous" v="1205"></script>
+<script src="./高高课堂_files/WebRTCAPI_edu_v1.0.2.min.js.下载" crossorigin="anonymous"></script>
+<!--[if IE]><script src="//7.url.cn/edu/webcourse/ie_polyfill_56545017b25c1ffb3c30.js"></script><![endif]-->
+<script src="./高高课堂_files/vendor_a140c8099ab8c47a4117.js.下载" crossorigin="anonymous"></script>
+<script crossorigin="anonymous" src="./高高课堂_files/index_25e281017e5634f8ff5a.js.下载"></script><div class="im-dialog-root"></div>
+<script>function IMWEB_WEBPACK_RunScripts(){for(var e=IMWEB_WEBPACK.jsRunCnt;e<IMWEB_WEBPACK.JSARRAY.length;e++){var E=IMWEB_WEBPACK.JSARRAY[e].name;-1!==E.indexOf("ie")&&-1===navigator.userAgent.indexOf("MSIE")||window["IMWEB_WEBPACK_"+E]()}}IMWEB_WEBPACK.firstLoad=!1,IMWEB_WEBPACK.jsLoadedCnt=IMWEB_WEBPACK.jsRunCnt,function(){for(var e=IMWEB_WEBPACK.jsLoadedCnt;e<IMWEB_WEBPACK.JSARRAY.length;e++){var E=IMWEB_WEBPACK.JSARRAY[e].name;if(-1===E.indexOf("ie")||-1!==navigator.userAgent.indexOf("MSIE"))if(IMWEB_WEBPACK[E])IMWEB_WEBPACK.jsLoadedCnt++;else{var n=document.createElement("script");n.src=IMWEB_WEBPACK.JSARRAY[e].url.replace("7.url.cn/edu","ke.qq.com"),document.body.appendChild(n),window.BJ_REPORT&&BJ_REPORT.report({level:2,msg:"js retry: "+n.src,ext:{msid:3182314}})}else IMWEB_WEBPACK.jsLoadedCnt++}}();</script>
+<script>T.page_js_ready = Date.now();window.__time__ = new Date().getTime();</script>
+<!--<script src="http://localhost:7476/webpack-dev-server.js?_dev"></script>-->
+<script>/**
+ * @description 百度统计上报代码
+ */
+/* eslint-disable */
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?0c196c536f609d373a16d246a117fd44";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+/* eslint-enable */
+</script>
+<script>/**
+ * @description tcss点击流上报
+ */
+/* eslint-disable */
+(function () {
+  var node = document.createElement('script'),
+    script = document.getElementsByTagName('script')[0];
+  node.src = window.location.protocol === 'https:' ?
+    'https://pingjs.qq.com/tcss.ping.https.js' :
+    'http://pingjs.qq.com/tcss.ping.js';
+  node.type = 'text/javascript';
+  node.onload = node.onerror = node.onreadystatechange = function () {
+    /loaded|complete|undefined/.test(node.readyState) && (function () {
+      node.onload = node.onerror = node.onreadystatechange = null;
+      node.parentNode.removeChild(node);
+      node = undefined;
+      if (typeof window.pgvMain == 'function') {
+        window.pgvMain();
+      }
+    }());
+  };
+  script.parentNode.insertBefore(node, script);
+})();
+/* eslint-enable */
+</script>
+
+
+<script>"use strict";var __register__sw__={version:"694b49ad41daa2989718a059e5f897e3",monitor:{support:33593251,notSupport:33593252,forceReload:33593253,autoReload:33593254,toHitCache:33593255,hitCache:33593256,cdnFailed:33593257,trySuccess:33593258,registerFailed:33593259},checkSwStatusUrl:"//sas.qq.com/cgi-bin/ke_GrayStrategy_study",checkSwStatusPushId:"491",autoRefresh:!1},monitorReport=function(){var a="https://cgi.connect.qq.com/report/report_vm",e=1e3,c=[];return function(t,o){t&&(!function(e){return e&&"[object Array]"===Object.prototype.toString.call(e)}(t)?c.push({id:t,msg:o}):Object.keys(t).forEach(function(e){t[e]&&c.push({id:t[e],msg:o})}),setTimeout(function(){!function(){var e=new Image;e.onload=e.onerror=function(){e=null};for(var t=[],o=[],r=0;r<c.length;r++){var n=c[r],i=n.id,s=n.msg;t.push(i),o.push(s)}0<c.length&&(e.src=a+"?monitors=["+t.join(",")+"]&_="+o.join(",").substr(0,1e3)+"&t="+Math.random()),c=[]}()},e))}}(),badjsReport=function(e){window.BJ_REPORT&&window.BJ_REPORT.info(e)},getCookie=function(e){var t,o=new RegExp("(^| )"+e+"=([^;]*)(;|$)");return(t=document.cookie.match(o))?unescape(t[2]):null},version=__register__sw__.version,checkSwStatusUrl=__register__sw__.checkSwStatusUrl,checkSwStatusPushId=__register__sw__.checkSwStatusPushId,monitor=__register__sw__.monitor,autoRefresh=__register__sw__.autoRefresh;function registerSw(o){var l=navigator.serviceWorker;function w(e,t){var o=e.isUseCache,r=e.reloadVersion,n=e.isRefresh,i=e.whiteUin,s=void 0===i?"":i,a=getCookie("uin")||"",c=a[a.length-1],u=-1<s.indexOf(c),d=o&&u;r&&r!==version?(monitorReport(monitor&&monitor.forceReload),registerSw(!0)):l.controller.postMessage(d),!t&&d&&function(){var e=setInterval(function(){checkSwStatusPushId&&window.imconnect&&(clearInterval(e),window.imconnect(checkSwStatusPushId,{appId:"tencentedu",modId:"sas",version:2,closeRegister:!1}).on("push",function(e){var t=e.data.body.result;l.controller&&w(t,!0)}))},200)}(),t&&n&&window.location.reload()}if(l.register("/webcourse/sw.js").then(function(e){badjsReport("sw注册成功"),e.onupdatefound=function(){var t=e.installing;t.onstatechange=function(){if("activated"===t.state&&l.controller){if(o)return void window.location.reload();console.log("New content is available; please refresh.");var e=new Event("sw-refresh");window.dispatchEvent(e)}}},console.log("ServiceWorker registration successful with scope: ",e.scope)}).catch(function(e){console.log("ServiceWorker registration failed: ",e),monitorReport(monitor&&monitor.registerFailed),badjsReport("sw注册失败:"+e.message)}),checkSwStatusUrl){o||fetch(checkSwStatusUrl).then(function(e){return e.json()}).then(function(e){l.controller&&0==+e.retcode&&w(e.result)})}}var isNotSupportBrowser=/QQBrowser/.test(navigator.userAgent)||/Android/.test(navigator.userAgent)||/Nexus/.test(navigator.userAgent);"serviceWorker"in navigator&&!isNotSupportBrowser?(monitorReport(monitor&&monitor.support),window.addEventListener("DOMContentLoaded",function(){autoRefresh&&monitorReport(monitor&&monitor.autoReload),registerSw(autoRefresh)})):monitorReport(monitor&&monitor.notSupport);</script>
+
+<div class="im-dialog-root"></div><div class="im-dialog-root"></div><div></div><div class="im-dialog-root"></div></body></html>
